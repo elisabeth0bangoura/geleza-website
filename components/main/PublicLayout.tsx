@@ -1,5 +1,3 @@
-'use client'
-
 import { Drawer } from '@mantine/core'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -19,6 +17,7 @@ const PublicLayout = ({ children }: any) => {
       >
         <hr className="mb-5" />
         <div className="flex flex-col gap-5 ">
+          <Link href="/">Home</Link>
           <Link href="/how-it-works">How it works</Link>
           <Link href="/teachers">Teachers</Link>
           <Link href="/groups">Groups</Link>
@@ -40,7 +39,7 @@ const PublicLayout = ({ children }: any) => {
 
   return (
     <>
-      <header className="w-full mx-auto px-4 py-2 bg-gray-800 text-teal-50 fixed">
+      <header className="w-full mx-auto px-4 py-3 bg-gray-800 text-teal-50 fixed">
         <div className="w-full mx-auto max-w-7xl flex items-center justify-between">
           <BiMenuAltLeft
             size={30}
@@ -51,6 +50,7 @@ const PublicLayout = ({ children }: any) => {
             <img src="/logo.png" className="h-10" />
           </Link>
           <div className="lg:flex items-center gap-5 hidden">
+            <Link href="/">Home</Link>
             <Link href="/how-it-works">How it works</Link>
             <Link href="/teachers">Teachers</Link>
             <Link href="/groups">Groups</Link>
@@ -71,7 +71,7 @@ const PublicLayout = ({ children }: any) => {
         </div>
       </header>
       <MobileMenu />
-      <div className="pt-16">{children}</div>
+      <div className="pt-10">{children}</div>
       <footer className="w-full mx-auto px-4 py-2 bg-gray-800 text-teal-50">
         <div className="w-full py-12 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5">
           <div>
@@ -97,6 +97,7 @@ const PublicLayout = ({ children }: any) => {
             <h2 className="font-bold text-primary text-xl">Menu</h2>
 
             <hr className="my-2 border-gray-700" />
+
             <Link href="/how-it-works">How it works</Link>
             <Link href="/teachers">Teachers</Link>
             <Link href="/groups">Groups</Link>
@@ -112,7 +113,7 @@ const PublicLayout = ({ children }: any) => {
               All payments are processed by secure gateways and no payment
               information is stored on our servers.
             </p>
-            <img src="payment.png" className="object-contain w-full" />
+            <img src="payment.png" className="object-contain w-full h-14" />
           </div>
         </div>
         <hr className="border-gray-600" />

@@ -13,7 +13,7 @@ const Hero = () => {
             GRADE 8 - 12
           </Badge>
           <br />
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-7 mt-6 text-gray-800">
+          <h1 className="text-5xl  lg:text-7xl font-black mb-7 mt-6 text-gray-800">
             Extra Classes <span className="text-white">Made Easy</span> &
             Affordable
           </h1>

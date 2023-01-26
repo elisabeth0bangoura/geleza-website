@@ -14,18 +14,11 @@ type Props = {
 function MyApp({ Component, pageProps }: Props) {
   //
   const [showing, setShowing] = useState(false)
-  const [loading, setLoading] = useState(true)
 
   NProgress.configure({ showSpinner: true })
 
   useEffect(() => {
     setShowing(true)
-  }, [])
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 2000)
   }, [])
 
   const [showTopBtn, setShowTopBtn] = useState(false)
@@ -47,16 +40,6 @@ function MyApp({ Component, pageProps }: Props) {
   if (typeof window === 'undefined') {
     return <></>
   }
-
-  if (loading)
-    return (
-      <div className="flex  justify-center items-center h-screen flex-col p-10">
-        <img
-          src="/logo_only.png"
-          className="aspect-square animate-pulse h-96"
-        />
-      </div>
-    )
 
   return (
     <>

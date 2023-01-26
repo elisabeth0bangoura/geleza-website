@@ -3,10 +3,11 @@
 import { Button } from '@mantine/core'
 import Link from 'next/link'
 import React from 'react'
+import { BiArrowToRight } from 'react-icons/bi'
 
 const CallToAction = () => {
   return (
-    <div className="w-full bg-gray-900 mx-auto">
+    <div className="w-full bg-gradient-to-tr from-cyan-900 via-gray-800 to-cyan-900 mx-auto">
       <div className=" mx-auto w-full text-white max-w-2xl py-20 px-5 flex flex-col justify-center items-center">
         <h1 className="font-bold text-4xl mb-2">Got Any Questions?</h1>
         <p className="text-center mt-2 mb-10 text-md font-light">
@@ -15,12 +16,13 @@ const CallToAction = () => {
         </p>
         <Button
           size="lg"
-          color={'green'}
+          color={'gray'}
           component={Link}
           href="/help"
-          className="bg-primary text-white px-10"
+          className="btn"
         >
-          Get in touch
+          <h6>Get In Touch</h6>
+          <BiArrowToRight className="ml-4" />
         </Button>
       </div>
     </div>

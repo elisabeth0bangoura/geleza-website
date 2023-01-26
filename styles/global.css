@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .btn {
+        @apply px-14 py-4 bg-gray-700 text-white shadow-xl shadow-primary hover:scale-105 transition-all hover:translate-y-2 duration-700 font-bold;
+    }
+}

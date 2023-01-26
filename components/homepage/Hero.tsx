@@ -2,6 +2,7 @@
 import { Badge } from '@mantine/core'
 import Link from 'next/link'
 import React from 'react'
+import { BiInfoCircle } from 'react-icons/bi'
 import { CLASS_URL } from '../../utils/urls'
 
 const Hero = () => {
@@ -22,13 +23,15 @@ const Hero = () => {
             students with top educators, providing quality high school education
             as well as extra classes to help development skills.
           </p>
-          <a
-            href={CLASS_URL}
-            target="_blank"
-            className="px-14 py-4 bg-dark border-4  border-white mt-10 rounded-full text-white font-bold"
-          >
-            Go To Class
-          </a>
+          <div className="flex items-center gap-5  mt-10">
+            <a
+              href={CLASS_URL}
+              target="_blank"
+              className="px-14 animate-bounce py-4 bg-dark border-2  border-white rounded-full text-white font-bold"
+            >
+              Go To Class
+            </a>
+          </div>
         </div>
         <div>
           <img src="/cover.png" />

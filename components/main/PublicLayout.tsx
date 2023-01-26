@@ -20,7 +20,6 @@ const PublicLayout = ({ children }: any) => {
           <Link href="/">Home</Link>
           <Link href="/how-it-works">How it works</Link>
           <Link href="/teachers">Teachers</Link>
-          <Link href="/groups">Groups</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/faq">FAQs</Link>
           <Link href="/help">Help</Link>
@@ -39,7 +38,7 @@ const PublicLayout = ({ children }: any) => {
 
   return (
     <>
-      <header className="w-full mx-auto px-4 py-3 bg-gray-800 text-teal-50 fixed">
+      <header className="w-full mx-auto px-4 py-3 bg-gray-800 text-teal-50 fixed z-50">
         <div className="w-full mx-auto max-w-7xl flex items-center justify-between">
           <BiMenuAltLeft
             size={30}
@@ -53,7 +52,6 @@ const PublicLayout = ({ children }: any) => {
             <Link href="/">Home</Link>
             <Link href="/how-it-works">How it works</Link>
             <Link href="/teachers">Teachers</Link>
-            <Link href="/groups">Groups</Link>
             <Link href="/pricing">Pricing</Link>
             <Link href="/faq">FAQs</Link>
             <Link href="/help">Help</Link>
@@ -100,7 +98,6 @@ const PublicLayout = ({ children }: any) => {
 
             <Link href="/how-it-works">How it works</Link>
             <Link href="/teachers">Teachers</Link>
-            <Link href="/groups">Groups</Link>
             <Link href="/pricing">Pricing</Link>
             <Link href="/faq">FAQs</Link>
           </div>

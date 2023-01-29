@@ -27,29 +27,29 @@ const Pricing = () => {
               </span>
               <h2 className="font-bold text-dark mb-5 text-[32px]">
                 FREE{' '}
-                <span className="text-base text-body-color font-medium">
+                <span className="text-base text-gray-700 font-medium">
                   / Month
                 </span>
               </h2>
             </div>
             <div>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ☑️ Access to the classroom portal
               </p>
 
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ☑️ Access to all documents and previous exam papers
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ School lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ Extra lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ Social lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ Students chatroom (Coming soon)
               </p>
             </div>
@@ -72,28 +72,28 @@ const Pricing = () => {
               <h2 className="font-bold text-dark mb-5 text-[32px]">
                 <span className="line-through text-gray-400">R450</span>
                 <span> R350</span>
-                <span className="text-base text-body-color font-medium">
+                <span className="text-base text-gray-700 font-medium">
                   / Month
                 </span>
               </h2>
             </div>
             <div>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Access to the classroom portal
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Social & Lifestyle lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Access to all documents and previous exam papers
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ All extra lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ School subjects lessons
               </p>
-              <p className="text-base text-body-color leading-loose mb-1">
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Students chatroom (Coming soon)
               </p>
             </div>

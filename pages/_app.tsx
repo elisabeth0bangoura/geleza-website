@@ -51,7 +51,14 @@ function MyApp({ Component, pageProps }: Props) {
         height={5}
       />
 
-      <MantineProvider>
+      <MantineProvider
+        withCSSVariables
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          colorScheme: 'dark',
+        }}
+      >
         <ModalsProvider>
           <PublicLayout>
             <Component {...pageProps} />

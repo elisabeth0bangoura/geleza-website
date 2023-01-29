@@ -18,7 +18,7 @@ const Hero = () => {
             Extra Classes <span className="text-white">Made Easy</span> &
             Affordable
           </h1>
-          <p className="mb-14 font-light text-xl">
+          <p className="mb-14 font-light text-xl text-white">
             Geleza is a South African online tutoring platforms that connects
             students with top educators, providing quality high school education
             as well as extra classes to help development skills.

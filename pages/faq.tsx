@@ -1,6 +1,7 @@
 import { Accordion } from '@mantine/core'
 import { GetServerSidePropsContext } from 'next'
 import React from 'react'
+import Subjects from '../components/homepage/Subjects'
 import CallToAction from '../components/public/CallToAction'
 import directus from '../utils/directus'
 import { CLASS_URL } from '../utils/urls'
@@ -33,6 +34,7 @@ const Faq = ({ faqs }: any) => {
           })}
         </Accordion>
       </div>
+      <Subjects />
       <CallToAction />
     </>
   )

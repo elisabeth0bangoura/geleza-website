@@ -14,12 +14,11 @@ const About = () => {
             Because the future matters.
           </Badge>
 
-          <p>
-            Most students opt in for extra classes to improve on what they are
-            learning from schools. But those extra lessons can be very expensive
-            sometimes. <br /> <br /> Instead of paying a fee for each subject,
-            Zita combines all subjects in one platform, and add extra lessons as
-            well, for one fixed fee.
+          <p className="text-gray-800">
+            Our aim is not to replace the South African education system but
+            improve what is already being offered. <br /> <br /> Instead of
+            paying a fee for each subject, Geleza combines all major subjects in
+            one platform, and add extra lessons as well, for one fixed fee.
           </p>
           <br />
           <br />

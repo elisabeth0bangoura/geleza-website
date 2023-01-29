@@ -19,7 +19,6 @@ const PublicLayout = ({ children }: any) => {
         <div className="flex flex-col gap-5 ">
           <Link href="/">Home</Link>
           <Link href="/how-it-works">How it works</Link>
-          <Link href="/teachers">Teachers</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/faq">FAQs</Link>
           <Link href="/help">Help</Link>
@@ -51,7 +50,6 @@ const PublicLayout = ({ children }: any) => {
           <div className="lg:flex items-center gap-5 hidden">
             <Link href="/">Home</Link>
             <Link href="/how-it-works">How it works</Link>
-            <Link href="/teachers">Teachers</Link>
             <Link href="/pricing">Pricing</Link>
             <Link href="/faq">FAQs</Link>
             <Link href="/help">Help</Link>
@@ -97,9 +95,10 @@ const PublicLayout = ({ children }: any) => {
             <hr className="my-2 border-gray-700" />
 
             <Link href="/how-it-works">How it works</Link>
-            <Link href="/teachers">Teachers</Link>
             <Link href="/pricing">Pricing</Link>
             <Link href="/faq">FAQs</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms & Conditions</Link>
           </div>
 
           <div className="flex flex-col gap-3">

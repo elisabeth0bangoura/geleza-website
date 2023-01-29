@@ -1,4 +1,5 @@
 import '../styles/global.css'
+import 'react-toastify/dist/ReactToastify.css'
 import { MantineProvider } from '@mantine/core'
 import NextNProgress from 'nextjs-progressbar'
 import { useState, useEffect } from 'react'
@@ -6,6 +7,7 @@ import { ModalsProvider } from '@mantine/modals'
 import NProgress from 'nprogress'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import PublicLayout from '../components/main/PublicLayout'
+import { ToastContainer } from 'react-toastify'
 
 type Props = {
   Component: any
@@ -60,6 +62,12 @@ function MyApp({ Component, pageProps }: Props) {
         }}
       >
         <ModalsProvider>
+          <ToastContainer
+            position="bottom-center"
+            pauseOnHover={false}
+            pauseOnFocusLoss={false}
+            theme="colored"
+          />
           <PublicLayout>
             <Component {...pageProps} />
           </PublicLayout>

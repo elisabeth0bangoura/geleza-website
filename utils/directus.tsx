@@ -1,5 +1,9 @@
 import { Directus } from '@directus/sdk'
 
-const directus = new Directus('http://localhost:8055')
+const directus = new Directus('https://admin.geleza.app', {
+  auth: {
+    staticToken: process.env.API_KEY,
+  },
+})
 
 export default directus

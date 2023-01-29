@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Subjects from '../components/homepage/Subjects'
 import directus from '../utils/directus'
 import { toast } from 'react-toastify'
-import { BiMailSend } from 'react-icons/bi'
 import { FaFacebook, FaInstagram, FaMailBulk, FaTwitter } from 'react-icons/fa'
 
 type Form = {
@@ -77,8 +76,8 @@ const Help = () => {
             <h1 className="font-bold text-2xl">Get in touch</h1>
             <hr className="w-[45%] border-primary mt-2 mb-5" />
             <p>
-              Geleza is a remote company. We operate in South Africa, Botswana,
-              Zimbabwe, Mozambique and Lesotho.
+              Geleza is a product of Reavize Enterprises, a global software
+              company with branches in South Africa and Mozambique.
             </p>
             <br />
             <p className="flex items-center gap-5">
@@ -87,16 +86,24 @@ const Help = () => {
             </p>
             <p className="flex items-center gap-5 mt-2">
               <FaFacebook size={20} />
-              Facebook: <a href="https://facebook.com/geleza_app">Geleza_App</a>
+              Facebook:{' '}
+              <a target="_blank" href="https://facebook.com/geleza_app">
+                Geleza_App
+              </a>
             </p>
             <p className="flex items-center gap-5 mt-2">
               <FaInstagram size={20} />
               Instagram:{' '}
-              <a href="https://instagram.com/geleza_app">Geleza_App</a>
+              <a target="_blank" href="https://www.instagram.com/geleza_app/">
+                Geleza_App
+              </a>
             </p>
             <p className="flex items-center gap-5 mt-2 mb-5">
               <FaTwitter size={20} />
-              Twitter: <a href="https://twitter.com/geleza_app">Geleza_App</a>
+              Twitter:{' '}
+              <a target="_blank" href="https://twitter.com/geleza_app">
+                Geleza App
+              </a>
             </p>
             <p>
               For business and related inquiries, please contact our company
@@ -105,8 +112,9 @@ const Help = () => {
             <br />
             <br />
             <a
-              className="btn bg-white text-gray-900"
+              className="btn shadow-none bg-white text-gray-900"
               href="https://reavize.com/"
+              target="_blank"
             >
               Visit reavize.com
             </a>
@@ -118,6 +126,7 @@ const Help = () => {
                 required
                 label="First name"
                 placeholder="John"
+                size="lg"
                 onChange={(e) =>
                   setForm({
                     ...form,
@@ -130,6 +139,7 @@ const Help = () => {
                 required
                 label="Last name"
                 placeholder="Doe"
+                size="lg"
                 onChange={(e) =>
                   setForm({
                     ...form,
@@ -143,6 +153,7 @@ const Help = () => {
               required
               label="Cell Number"
               className="mb-5"
+              size="lg"
               onChange={(e) =>
                 setForm({
                   ...form,
@@ -155,6 +166,7 @@ const Help = () => {
               required
               label="Subject"
               placeholder="How can we help?"
+              size="lg"
               className="mb-5"
               onChange={(e) =>
                 setForm({
@@ -168,6 +180,7 @@ const Help = () => {
               required
               label="Message"
               className="mb-5"
+              size="lg"
               onChange={(e) =>
                 setForm({
                   ...form,
@@ -176,7 +189,7 @@ const Help = () => {
               }
             />
             <Button
-              className="btn"
+              className="btn shadow-none"
               size="xl"
               loading={loading}
               onClick={submit}

@@ -7,7 +7,7 @@ const Pricing = () => {
     <>
       <div className="w-full max-w-4xl mx-auto">
         <div className="py-20 flex flex-col justify-center items-center max-w-xl mx-auto">
-          <span className="font-semibold text-lg text-primary mb-2">
+          <span className="font-semibold text-lg text-center text-primary mb-2">
             Pricing Table
           </span>
           <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-center  mb-4">

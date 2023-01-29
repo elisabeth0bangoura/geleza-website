@@ -11,7 +11,9 @@ const Faq = ({ faqs }: any) => {
     <>
       <div className="w-full max-w-3xl mx-auto pb-10 px-5">
         <div className="py-20 flex flex-col justify-center items-center max-w-xl mx-auto">
-          <span className="font-semibold text-lg text-primary mb-2">FAQs</span>
+          <span className="font-semibold text-lg text-primary mb-2 text-center">
+            FAQs
+          </span>
           <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-center  mb-4">
             Frequently Asked Questions
           </h2>

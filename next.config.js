@@ -6,7 +6,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'admin.geleza.app'],
   },
   eslint: {
     ignoreDuringBuilds: true,

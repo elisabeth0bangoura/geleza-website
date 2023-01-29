@@ -8,7 +8,7 @@ const About = () => {
       <div className="w-full mx-auto max-w-7xl py-20 px-5 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-800 mb-2">
-            Why Zeta?
+            Why Geleza?
           </h1>
           <Badge className="mt-2 mb-5 font-bold  bg-orange-500 text-white">
             Because the future matters.

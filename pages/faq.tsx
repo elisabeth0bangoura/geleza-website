@@ -16,7 +16,7 @@ const Faq = ({ faqs }: any) => {
           </h2>
           <p className="text-base text-center text-body-color">
             Let us answer some of the questions we get asked the most about
-            Zeta.
+            Geleza.
           </p>
         </div>
 

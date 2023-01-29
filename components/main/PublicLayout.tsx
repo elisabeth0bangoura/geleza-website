@@ -77,9 +77,9 @@ const PublicLayout = ({ children }: any) => {
               <img src="/logo.png" className="h-10" />
             </Link>
             <p className="my-3">
-              Zeta is a high school extra lessons platform that simplifies the
+              Geleza is a high school extra lessons platform that simplifies the
               way students learn and share their knowledge with each other.{' '}
-              <br /> <br /> Zeta is a product of{' '}
+              <br /> <br /> Geleza is a product of{' '}
               <a
                 href="https://reavize.com"
                 target="_blank"
@@ -115,7 +115,7 @@ const PublicLayout = ({ children }: any) => {
         </div>
         <hr className="border-gray-600" />
         <p className="text-center  text-sm py-5">
-          Zeta - A Reavize Company. All Rights Reserved ©{' '}
+          Geleza - A Reavize Company. All Rights Reserved ©{' '}
           {new Date().getFullYear()}
         </p>
       </footer>

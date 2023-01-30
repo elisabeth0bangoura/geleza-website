@@ -10,34 +10,48 @@ export default class _Document extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          <title>Geleza - High School Extra Lessons Made Easy.</title>
+          <meta
+            name="description"
+            content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          />
+          <meta
+            name="og:title"
+            content="Geleza - High School Extra Lessons Made Easy."
+          />
+          <meta name="og:type" content="website" />
+          <meta
+            name="og:description"
+            content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          />
+          <meta name="og:url" content="https://geleza.app" />
+          <meta name="og:image" content="https://www.geleza.app/cover.png" />
+          <meta name="og:image:width" content="1200" />
+          <meta name="og:image:height" content="630" />
+          <meta name="og:image:type" content="image/png" />
+          <meta name="og:image:alt" content="Geleza" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@Geleza" />
+          <meta name="twitter:creator" content="@Geleza" />
+
+          <meta
+            name="twitter:title"
+            content="Geleza - High School Extra Lessons Made Easy."
+          />
+          <meta
+            name="twitter:description"
+            content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          />
+          <meta
+            name="twitter:image"
+            content="https://www.geleza.app/cover.png"
+          />
+          <meta name="twitter:image:alt" content="Geleza" />
+        </Head>
         <body>
           <Main />
           <NextScript />
-          <Script
-            type="text/javascript"
-            id="zsiqchat"
-            async
-            onLoad={() => {
-              var $zoho: any = $zoho || {}
-              $zoho.salesiq = $zoho.salesiq || {
-                widgetcode:
-                  '33f5795d4c1a756f96a2df22d7b0597a9e8cd7705c735bf49f90107f9804525b',
-                values: {},
-                ready: function () {},
-              }
-              var d = document
-              let s
-              s = d.createElement('script')
-              s.type = 'text/javascript'
-              s.id = 'zsiqscript'
-              s.defer = true
-              s.src = 'https://salesiq.zoho.com/widget'
-              let t: any
-              t = d.getElementsByTagName('script')[0]
-              t.parentNode.insertBefore(s, t)
-            }}
-          ></Script>
         </body>
       </Html>
     )

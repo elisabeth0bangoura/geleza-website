@@ -16,6 +16,7 @@ export const getServerSideProps = async ({ res }: any) => {
         'faq.tsx',
         'help.tsx',
         'how-it-works.tsx',
+        'earn.tsx',
         'pricing.tsx',
         'terms.tsx',
         'sitemap.xml.tsx',

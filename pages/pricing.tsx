@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import CallToAction from '../components/public/CallToAction'
 import { CLASS_URL } from '../utils/urls'
@@ -5,6 +6,42 @@ import { CLASS_URL } from '../utils/urls'
 const Pricing = () => {
   return (
     <>
+      <Head>
+        <title>Geleza - High School Extra Lessons Made Easy.</title>
+        <meta
+          name="description"
+          content="Join now for only R350 a month and get access to all subjects, study groups, live sessions and a lot more"
+        />
+        <meta
+          name="og:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta name="og:type" content="website" />
+        <meta
+          name="og:description"
+          content="Join now for only R350 a month and get access to all subjects, study groups, live sessions and a lot more"
+        />
+        <meta name="og:url" content="https://geleza.app" />
+        <meta name="og:image" content="https://www.geleza.app/cover.png" />
+        <meta name="og:image:width" content="1200" />
+        <meta name="og:image:height" content="630" />
+        <meta name="og:image:type" content="image/png" />
+        <meta name="og:image:alt" content="Geleza" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Geleza" />
+        <meta name="twitter:creator" content="@Geleza" />
+
+        <meta
+          name="twitter:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta
+          name="twitter:description"
+          content="Join now for only R350 a month and get access to all subjects, study groups, live sessions and a lot more"
+        />
+        <meta name="twitter:image" content="https://www.geleza.app/cover.png" />
+        <meta name="twitter:image:alt" content="Geleza" />
+      </Head>
       <div className="w-full max-w-4xl mx-auto px-5">
         <div className="py-20 flex flex-col justify-center items-center max-w-xl mx-auto">
           <span className="font-semibold text-lg text-center text-primary mb-2">

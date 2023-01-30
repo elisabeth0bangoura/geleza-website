@@ -1,4 +1,5 @@
 import { Badge } from '@mantine/core'
+import Head from 'next/head'
 import React from 'react'
 import { BiDollar, BiUserCheck } from 'react-icons/bi'
 import CallToAction from '../components/public/CallToAction'
@@ -7,6 +8,43 @@ import { CLASS_URL } from '../utils/urls'
 const Earn = () => {
   return (
     <>
+      <Head>
+        <title>Geleza - High School Extra Lessons Made Easy.</title>
+        <meta
+          name="description"
+          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+        />
+        <meta
+          name="og:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta name="og:type" content="website" />
+        <meta
+          name="og:description"
+          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+        />
+        <meta name="og:url" content="https://geleza.app" />
+        <meta name="og:image" content="https://www.geleza.app/cover.png" />
+        <meta name="og:image:width" content="1200" />
+        <meta name="og:image:height" content="630" />
+        <meta name="og:image:type" content="image/png" />
+        <meta name="og:image:alt" content="Geleza" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Geleza" />
+        <meta name="twitter:creator" content="@Geleza" />
+
+        <meta
+          name="twitter:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta
+          name="twitter:description"
+          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+        />
+        <meta name="twitter:image" content="https://www.geleza.app/cover.png" />
+        <meta name="twitter:image:alt" content="Geleza" />
+      </Head>
+
       <div className="bg-white w-full !text-gray-800">
         <div className="w-full mx-auto max-w-4xl py-16 flex items-center justify-center flex-col px-6">
           <Badge size="lg" className="bg-orange-500 text-white mt-5">

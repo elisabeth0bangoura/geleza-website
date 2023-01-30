@@ -4,6 +4,7 @@ import Subjects from '../components/homepage/Subjects'
 import directus from '../utils/directus'
 import { toast } from 'react-toastify'
 import { FaFacebook, FaInstagram, FaMailBulk, FaTwitter } from 'react-icons/fa'
+import Head from 'next/head'
 
 type Form = {
   name: string
@@ -62,7 +63,43 @@ const Help = () => {
   }
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>Geleza - High School Extra Lessons Made Easy.</title>
+        <meta
+          name="description"
+          content="Do you have any questions? Our team is always ready to help you."
+        />
+        <meta
+          name="og:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta name="og:type" content="website" />
+        <meta
+          name="og:description"
+          content="Do you have any questions? Our team is always ready to help you."
+        />
+        <meta name="og:url" content="https://geleza.app" />
+        <meta name="og:image" content="https://www.geleza.app/cover.png" />
+        <meta name="og:image:width" content="1200" />
+        <meta name="og:image:height" content="630" />
+        <meta name="og:image:type" content="image/png" />
+        <meta name="og:image:alt" content="Geleza" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Geleza" />
+        <meta name="twitter:creator" content="@Geleza" />
+
+        <meta
+          name="twitter:title"
+          content="Geleza - High School Extra Lessons Made Easy."
+        />
+        <meta
+          name="twitter:description"
+          content="Do you have any questions? Our team is always ready to help you."
+        />
+        <meta name="twitter:image" content="https://www.geleza.app/cover.png" />
+        <meta name="twitter:image:alt" content="Geleza" />
+      </Head>
       <div className="w-full max-w-7xl mx-auto px-5 py-20">
         <h1 className="text-center text-gray-100  md:text-5xl lg:text-6xl text-3xl font-black">
           Let's Get In Touch
@@ -199,7 +236,7 @@ const Help = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

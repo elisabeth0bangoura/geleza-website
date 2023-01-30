@@ -5,7 +5,7 @@ import { CLASS_URL } from '../utils/urls'
 const Pricing = () => {
   return (
     <>
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full max-w-4xl mx-auto px-5">
         <div className="py-20 flex flex-col justify-center items-center max-w-xl mx-auto">
           <span className="font-semibold text-lg text-center text-primary mb-2">
             Pricing Table
@@ -39,6 +39,12 @@ const Pricing = () => {
 
               <p className="text-base text-gray-700 leading-loose mb-1">
                 ☑️ Access to all documents and previous exam papers
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ❌ Live lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ❌ Access to teachers
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ School lessons
@@ -86,6 +92,12 @@ const Pricing = () => {
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Access to all documents and previous exam papers
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Join live lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Talk to teachers
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ All extra lessons

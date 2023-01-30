@@ -16,13 +16,14 @@ const About = () => {
               />
             </div>
             <div className="md:7/12 lg:w-1/2">
-              <h2 className="text-3xl font-bold text-gray-900 md:text-4xl ">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
                 How Geleza works
               </h2>
               <p className="my-8 text-gray-600 ">
-                Geleza offers a classroom portal for students to connect with
-                teachers and each other, to improve the way they learn and
-                interact with other students.
+                Geleza offers a classroom portal for students find lessons,
+                connect with teachers and other students, join live sessions,
+                ask questions, and a lot more. Everything you need to make
+                learning easy is available.
               </p>
               <div className="divide-y space-y-4 divide-gray-100 ">
                 <div className="mt-8 flex gap-4 md:items-center">

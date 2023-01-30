@@ -36,7 +36,6 @@ const Faq = ({ faqs }: any) => {
           })}
         </Accordion>
       </div>
-      <Subjects />
       <CallToAction />
     </>
   )

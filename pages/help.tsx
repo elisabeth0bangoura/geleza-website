@@ -84,13 +84,13 @@ const Help = () => {
               <FaMailBulk size={20} />
               Email: support@geleza.app
             </p>
-            <p className="flex items-center gap-5 mt-2">
+            {/* <p className="flex items-center gap-5 mt-2">
               <FaFacebook size={20} />
               Facebook:{' '}
               <a target="_blank" href="https://facebook.com/geleza_app">
                 Geleza_App
               </a>
-            </p>
+            </p> */}
             <p className="flex items-center gap-5 mt-2">
               <FaInstagram size={20} />
               Instagram:{' '}
@@ -199,7 +199,6 @@ const Help = () => {
           </div>
         </div>
       </div>
-      <Subjects />
     </div>
   )
 }

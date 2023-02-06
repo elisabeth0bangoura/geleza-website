@@ -12,7 +12,7 @@ const Marketing = () => {
         <h1 className="mt-5 text-3xl md:text-5xl text-center font-black text-gray-50">
           <span className="text-red-500">Stop paying</span> for each subject.{' '}
           <br /> Get a lot more from only{' '}
-          <span className="text-primary ">$10 (ZAR 179) a month.</span>
+          <span className="text-primary ">$20 a month.</span>
         </h1>
 
         <p className="my-5 text-center text-white font-light text-xl">

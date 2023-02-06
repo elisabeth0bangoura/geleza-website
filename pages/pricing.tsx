@@ -56,67 +56,17 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="p-10 bg-white border shadow-gray-400 shadow-lg rounded-lg">
-            <div>
-              <span className="text-primary font-semibold text-lg block mb-2">
-                Student Pro
-              </span>
-              <h2 className="font-bold text-dark mb-5 text-[32px]">
-                ZAR 179{' '}
-                <span className="text-base text-gray-700 font-medium">
-                  / Month
-                </span>
-              </h2>
-            </div>
-            <div>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ A.I Chat
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Live lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Chat with teachers
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ School lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Extra lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Social lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Access to the classroom portal
-              </p>
-
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Access to all documents and study materials.
-              </p>
-            </div>
-            <div className="mt-5">
-              <a href={CLASS_URL} target="_blank">
-                <button className="py-5 w-full bg-primary text-white rounded-md shadow-xl hover:scale-105 transition-all">
-                  Get Started
-                </button>
-              </a>
-            </div>
-          </div>
+        <div className="mb-20 grid grid-cols-1 max-w-md mx-auto gap-10">
           <div className="p-10 bg-white border shadow-gray-400 shadow-lg rounded-lg">
             <div>
               <span className="text-primary font-semibold text-lg block mb-2">
                 Student Pro -{' '}
                 <span className="bg-primary text-white rounded-full py-1 px-5">
-                  22% OFF
+                  All Access Plan
                 </span>
               </span>
               <h2 className="font-bold text-dark mb-5 text-[32px]">
-                <span className="line-through text-gray-400 text-xl">
-                  ZAR 449
-                </span>
-                <span> ZAR 349</span>
+                <span> $20</span>
                 <span className="text-base text-gray-700 font-medium">
                   / Month
                 </span>

@@ -19,7 +19,7 @@ const Hero = () => {
             Affordable
           </h1>
           <p className="mb-14 font-light text-xl text-white">
-            Geleza is a South African online tutoring platforms that connects
+            Geleza is an African online tutoring platforms that connects
             students with top educators, providing quality high school education
             as well as extra classes to help development skills.
           </p>

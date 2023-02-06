@@ -12,7 +12,7 @@ const Earn = () => {
         <title>Geleza - High School Extra Lessons Made Easy.</title>
         <meta
           name="description"
-          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+          content="Make money with Geleza. Earn up to $55 monthly, and also get a free account until December. T&Cs Apply."
         />
         <meta
           name="og:title"
@@ -21,7 +21,7 @@ const Earn = () => {
         <meta name="og:type" content="website" />
         <meta
           name="og:description"
-          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+          content="Make money with Geleza. Earn up to $55 monthly, and also get a free account until December. T&Cs Apply."
         />
         <meta name="og:url" content="https://geleza.app" />
         <meta name="og:image" content="https://www.geleza.app/cover.png" />
@@ -39,7 +39,7 @@ const Earn = () => {
         />
         <meta
           name="twitter:description"
-          content="Make money with Geleza. Earn up to R1000 monthly, and also get a free account until December. T&Cs Apply."
+          content="Make money with Geleza. Earn up to $55 monthly, and also get a free account until December. T&Cs Apply."
         />
         <meta name="twitter:image" content="https://www.geleza.app/cover.png" />
         <meta name="twitter:image:alt" content="Geleza" />
@@ -48,15 +48,15 @@ const Earn = () => {
       <div className="bg-white w-full !text-gray-800">
         <div className="w-full mx-auto max-w-4xl py-16 flex items-center justify-center flex-col px-6">
           <Badge size="lg" className="bg-orange-500 text-white mt-5">
-            Get paid R1000 for 3 month
+            Get paid $55 for 3 month
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-black mt-5">
             Get <span className="text-primary">Free Account</span> And Earn
-            <span className="text-primary">R1000</span> Monthly
+            <span className="text-primary"> $55</span> Monthly
           </h1>
           <p className="text-center font-light text-xl mt-5">
             Recruit 20 Students and get a free account until December, and get
-            paid R1000 for 3 months. Only students are allowed to enter this
+            paid $55 for 3 months. Only students are allowed to enter this
             promo.
           </p>
           <a target={'_blank'} href={CLASS_URL} className="btn px-20 mt-5">
@@ -81,13 +81,15 @@ const Earn = () => {
               <h2 className="text-4xl md:text-5xl  font-black text-gray-900">
                 How It Works
               </h2>
+
               <Badge size="md" className=" text-black mt-2.5">
                 You will need 20 subscribed students.
               </Badge>
+
               <p className="my-8 text-gray-600 ">
                 Create account as a student. Then recruit your school mates to
-                sign up as well and subscribe to the Student Pro plan for R350 /
-                month. Add their email addresses under your{' '}
+                sign up as well and subscribe to the Student Pro plan for $10
+                (ZAR 179) / month. Add their email addresses under your{' '}
                 <span className="font-bold">"Earn Account"</span>, then we will
                 approve if they are subscribed.
               </p>
@@ -98,11 +100,11 @@ const Earn = () => {
                   </div>
                   <div className="w-5/6">
                     <h4 className="font-semibold text-lg text-gray-700 ">
-                      R1000 for 3 months.
+                      $55 for 3 months.
                     </h4>
                     <p className="text-gray-500 ">
-                      Once you reach 20 subscribed students, we will pay you
-                      R1000 for 3 months.
+                      Once you reach 20 subscribed students, we will pay you $55
+                      for 3 months.
                     </p>
                   </div>
                 </div>

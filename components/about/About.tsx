@@ -67,11 +67,11 @@ const About = () => {
                   </div>
                   <div className="w-5/6">
                     <h4 className="font-semibold text-lg text-gray-700 ">
-                      Anywhere in Africa.
+                      Anywhere in the world.
                     </h4>
                     <p className="text-gray-500 ">
                       Connect and interact with students and teachers from all
-                      over the country.
+                      over the world.
                     </p>
                   </div>
                 </div>

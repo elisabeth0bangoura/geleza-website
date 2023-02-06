@@ -53,13 +53,13 @@ const Homepage = () => {
       <div className="w-full mx-auto max-w-4xl py-16 flex items-center justify-center flex-col px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-black text-white mb-5">
           Get <span className="text-primary">Free Account</span> And Earn{' '}
-          <span className="text-primary">R1000</span> Monthly
+          <span className="text-primary">$55</span> Monthly
         </h1>
-        <Badge size="xl">Get paid R1000 for 3 month</Badge>
+        <Badge size="xl">Get paid $55 for 3 month</Badge>
         <p className="text-center mt-4 text-white font-light text-lg">
           Are you good with people? Recruit 20 Students and get a free account
-          until December, and get paid R1000 for 3 months. Only students are
-          allowed to enter this promo.
+          until December. You will also get paid $55 for 3 months, paid to your
+          PayPal account. Only students are allowed to enter this promo.
         </p>
         <br />
         <Link className="btn px-20" href="/earn">

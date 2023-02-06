@@ -32,8 +32,8 @@ const Features = () => {
           <Card
             color={'indigo'}
             image={<BiMessage />}
-            title="Live Chat"
-            description="Each subject has a group chat for students to ask questions, bond with others and development their communication skills."
+            title="A.I Chat"
+            description="Students can talk to our built-in A.I, programmed to help them write homeworks, study better and prepare for exams."
           />
           <Card
             color={'teal'}

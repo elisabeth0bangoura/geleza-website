@@ -60,10 +60,10 @@ const Pricing = () => {
           <div className="p-10 bg-white border shadow-gray-400 shadow-lg rounded-lg">
             <div>
               <span className="text-primary font-semibold text-lg block mb-2">
-                Student Free
+                Student Pro
               </span>
               <h2 className="font-bold text-dark mb-5 text-[32px]">
-                FREE{' '}
+                ZAR 179{' '}
                 <span className="text-base text-gray-700 font-medium">
                   / Month
                 </span>
@@ -71,29 +71,29 @@ const Pricing = () => {
             </div>
             <div>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Access to the classroom portal
-              </p>
-
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ☑️ Access to all documents and previous exam papers
+                ❌ A.I Chat
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
                 ❌ Live lessons
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Access to teachers
+                ❌ Chat with teachers
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ School lessons
+                ☑️ School lessons
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Extra lessons
+                ☑️ Extra lessons
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Social lessons
+                ☑️ Social lessons
               </p>
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ❌ Students chatroom (Coming soon)
+                ☑️ Access to the classroom portal
+              </p>
+
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ☑️ Access to all documents and study materials.
               </p>
             </div>
             <div className="mt-5">
@@ -113,8 +113,10 @@ const Pricing = () => {
                 </span>
               </span>
               <h2 className="font-bold text-dark mb-5 text-[32px]">
-                <span className="line-through text-gray-400">R450</span>
-                <span> R350</span>
+                <span className="line-through text-gray-400 text-xl">
+                  ZAR 449
+                </span>
+                <span> ZAR 349</span>
                 <span className="text-base text-gray-700 font-medium">
                   / Month
                 </span>
@@ -122,30 +124,32 @@ const Pricing = () => {
             </div>
             <div>
               <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ A.I Chat
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Live lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Chat with teachers
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ School lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Extra lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
+                ✅ Social lessons
+              </p>
+              <p className="text-base text-gray-700 leading-loose mb-1">
                 ✅ Access to the classroom portal
               </p>
+
               <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ Social & Lifestyle lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ Access to all documents and previous exam papers
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ Join live lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ Talk to teachers
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ All extra lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ School subjects lessons
-              </p>
-              <p className="text-base text-gray-700 leading-loose mb-1">
-                ✅ Students chatroom (Coming soon)
+                ✅ Access to all documents and study materials.
               </p>
             </div>
+
             <div className="mt-5">
               <a href={CLASS_URL} target="_blank">
                 <button className="py-5 w-full bg-black text-white rounded-md shadow-xl hover:scale-105 transition-all">

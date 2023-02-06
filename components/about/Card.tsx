@@ -11,7 +11,7 @@ type Info = {
 const Card = ({ description, image, title, color }: Info) => {
   return (
     <div
-      className="bg-white shadow-2xl border rounded-2xl p-5 flex items-center justify-center flex-col border-b-2"
+      className="bg-white shadow-2xl border rounded-2xl px-6 py-8 flex items-center justify-center flex-col border-b-2"
       style={{
         borderBottomColor: color,
       }}
@@ -24,12 +24,12 @@ const Card = ({ description, image, title, color }: Info) => {
       >
         {image}
       </div>
-      <h1 className="text-xl my-2 font-bold">{title}</h1>
+      <h1 className="text-xl my-4 font-bold">{title}</h1>
       <p className="text-sm text-center">{description}</p>
       <a
         href={CLASS_URL}
         target="_blank"
-        className="mt-4 border w-full py-2 bg-slate-200 text-center"
+        className="mt-7 border w-full py-2 bg-slate-200 text-center"
       >
         Get Started
       </a>

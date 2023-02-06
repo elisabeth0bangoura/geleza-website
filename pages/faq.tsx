@@ -14,7 +14,7 @@ const Faq = ({ faqs }: any) => {
         <title>Geleza - High School Extra Lessons Made Easy.</title>
         <meta
           name="description"
-          content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          content="Geleza is a global online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
         />
         <meta
           name="og:title"
@@ -23,7 +23,7 @@ const Faq = ({ faqs }: any) => {
         <meta name="og:type" content="website" />
         <meta
           name="og:description"
-          content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          content="Geleza is a global online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
         />
         <meta name="og:url" content="https://geleza.app" />
         <meta name="og:image" content="https://www.geleza.app/cover.png" />
@@ -41,7 +41,7 @@ const Faq = ({ faqs }: any) => {
         />
         <meta
           name="twitter:description"
-          content="Geleza is a South African online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
+          content="Geleza is a global online tutoring platforms that connects students with top educators, providing quality high school education as well as extra classes to help development skills."
         />
         <meta name="twitter:image" content="https://www.geleza.app/cover.png" />
         <meta name="twitter:image:alt" content="Geleza" />

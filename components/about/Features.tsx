@@ -22,7 +22,7 @@ const Features = () => {
           Our platform is feature-packed to make learning as easy as possible
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
           <Card
             color={'orange'}
             image={<BiVideo />}
@@ -38,10 +38,10 @@ const Features = () => {
           <Card
             color={'teal'}
             image={<BiChat />}
-            title="Lesson Comments"
-            description="Lessons comments allows students to voice their opinions and understanding about a lesson. Comments are reviewed by teachers."
+            title="Teacher's Assistant"
+            description="Are you stuck on a lesson? Talk to our tutors and get instant help. Ask questions and setup one on one session with tutors."
           />
-          <Card
+          {/* <Card
             color={'violet'}
             image={<BiListPlus />}
             title="Watchlist"
@@ -52,7 +52,7 @@ const Features = () => {
             image={<BiEditAlt />}
             title="Exam Mode"
             description="During exams, Geleza works differently. You get features that are only tailored to make you deal with exams better and focus more."
-          />
+          /> */}
           <Card
             color={'green'}
             image={<BiFile />}

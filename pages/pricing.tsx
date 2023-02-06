@@ -51,8 +51,9 @@ const Pricing = () => {
             Our Pricing Plan
           </h2>
           <p className="text-base text-center text-body-color">
-            Our pricing is straightforward and simple to understand. Choose what
-            works best for you and get started now.
+            Our pricing is straightforward and simple to understand. We don't
+            limit your access to learning. Get a fixed subscription plan for all
+            the benefits.
           </p>
         </div>
 

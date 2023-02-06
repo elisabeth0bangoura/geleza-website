@@ -12,7 +12,7 @@ const CallToAction = () => {
         <h1 className="font-bold text-4xl mb-2 text-center">
           Got Any Questions?
         </h1>
-        <p className="text-center mt-2 mb-10 text-xl font-light">
+        <p className="text-center mt-2 mb-10  font-light">
           Do not hesitate to contact us if you have any questions, or would like
           to know more about us. Our team is always ready to hear from you.
         </p>

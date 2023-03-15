@@ -1,21 +1,25 @@
 import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
-import { CLASS_URL } from '../../utils/urls'
+import { CLASS_URL } from '../../../utils/urls'
 
 const Subjects = () => {
   return (
-    <div className="!text-gray-800 bg-white px-5">
-      <h1 className="text-center text-gray-800 pt-20 md:text-5xl lg:text-6xl text-3xl font-black">
-        More for less, Always
+    <div className="!text-gray-800 px-5">
+      <h1 className="text-center text-gray-200 pt-20 md:text-5xl  text-3xl font-black">
+        Join the{' '}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
+          Next Generation
+        </span>{' '}
+        of <br /> Learners with A.I.-Backed Education
       </h1>
-      <p className="text-center text-gray-800 mt-5 text-xl">
+      <p className="text-center text-gray-400 mt-5 text-xl">
         Geleza offers all major subjects, health and lifestyle lessons, and
         skills development courses
       </p>
       <div className="relative py-20">
         <div className="container relative m-auto px-6 text-gray-500 md:px-12">
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
-            <div className="group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
                 className="mx-auto w-24 h-24 rounded-full object-cover"
                 src="/images/subjects.webp"
@@ -36,7 +40,7 @@ const Subjects = () => {
                 <BiArrowToRight />
               </a>
             </div>
-            <div className="group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
                 className="mx-auto w-24 h-24 rounded-full object-cover"
                 src="/images/social.webp"
@@ -58,7 +62,7 @@ const Subjects = () => {
                 <BiArrowToRight />
               </a>
             </div>
-            <div className="group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
                 className="mx-auto w-24 h-24 object-cover rounded-full"
                 src="/images/coding.webp"

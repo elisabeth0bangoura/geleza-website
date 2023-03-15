@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Terms = () => {
+const TermsPage = () => {
   return (
     <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">
       <h2>
@@ -325,4 +325,4 @@ const Terms = () => {
   )
 }
 
-export default Terms
+export default TermsPage

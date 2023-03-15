@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Privacy = () => {
+const PrivacyPage = () => {
   return (
     <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">
       <h1>Privacy Policy</h1>
@@ -514,4 +514,4 @@ const Privacy = () => {
   )
 }
 
-export default Privacy
+export default PrivacyPage

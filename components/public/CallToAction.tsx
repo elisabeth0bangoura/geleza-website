@@ -1,34 +1,140 @@
 'use client'
 
-import { Button } from '@mantine/core'
+import { createStyles, Title, Text, Button, Container } from '@mantine/core'
 import Link from 'next/link'
-import React from 'react'
-import { BiArrowToRight } from 'react-icons/bi'
+import Dots from '../ui/Dots'
 
-const CallToAction = () => {
+const useStyles = createStyles((theme) => ({
+  wrapper: {
+    position: 'relative',
+    paddingTop: 120,
+    paddingBottom: 80,
+
+    [theme.fn.smallerThan('sm')]: {
+      paddingTop: 80,
+      paddingBottom: 60,
+    },
+  },
+
+  inner: {
+    position: 'relative',
+    zIndex: 1,
+  },
+
+  dots: {
+    position: 'absolute',
+    color:
+      theme.colorScheme === 'dark'
+        ? theme.colors.dark[5]
+        : theme.colors.gray[1],
+
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
+  },
+
+  dotsLeft: {
+    left: 0,
+    top: 0,
+  },
+
+  title: {
+    textAlign: 'center',
+    fontWeight: 800,
+    fontSize: 40,
+    letterSpacing: -1,
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    marginBottom: theme.spacing.xs,
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: 28,
+      textAlign: 'left',
+    },
+  },
+
+  description: {
+    textAlign: 'center',
+
+    [theme.fn.smallerThan('xs')]: {
+      textAlign: 'left',
+      fontSize: theme.fontSizes.md,
+    },
+  },
+
+  controls: {
+    marginTop: theme.spacing.lg,
+    display: 'flex',
+    justifyContent: 'center',
+
+    [theme.fn.smallerThan('xs')]: {
+      flexDirection: 'column',
+    },
+  },
+
+  control: {
+    '&:not(:first-of-type)': {
+      marginLeft: theme.spacing.md,
+    },
+
+    [theme.fn.smallerThan('xs')]: {
+      height: 42,
+      fontSize: theme.fontSizes.md,
+
+      '&:not(:first-of-type)': {
+        marginTop: theme.spacing.md,
+        marginLeft: 0,
+      },
+    },
+  },
+}))
+
+export function CallToAction() {
+  const { classes } = useStyles()
+
   return (
-    <div className="w-full bg-gradient-to-tr from-cyan-900 via-gray-800 to-cyan-900 mx-auto">
-      <div className=" mx-auto w-full text-white max-w-2xl py-20 px-5 flex flex-col justify-center items-center">
-        <h1 className="font-bold text-4xl mb-2 text-center">
-          Got Any Questions?
-        </h1>
-        <p className="text-center mt-2 mb-10  font-light">
-          Do not hesitate to contact us if you have any questions, or would like
-          to know more about us. Our team is always ready to hear from you.
-        </p>
-        <Button
-          size="xl"
-          color={'gray'}
-          component={Link}
-          href="/help"
-          className="btn border-2 rounded-full border-white"
-        >
-          <h6>Get In Touch</h6>
-          <BiArrowToRight className="ml-4" />
-        </Button>
-      </div>
+    <div className="bg-gradient-to-br from-gray-800 via-slate-900 to-blue-900">
+      <Container className={classes.wrapper} size={1400}>
+        <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
+        <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
+        <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
+        <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+
+        <div className={classes.inner}>
+          <Title className={classes.title}>
+            Revolutionize Your Learning <br /> with{' '}
+            <Text
+              component="span"
+              className={
+                'text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600'
+              }
+              inherit
+            >
+              A.I-Driven
+            </Text>{' '}
+            Platform!
+          </Title>
+
+          <Container p={0} size={600}>
+            <Text size="lg" color="dimmed" className={classes.description}>
+              Enroll now and discover why Geleza is the best investment you'll
+              ever make in yourself. Get ready to ace your exams, impress your
+              teachers, and achieve your dreams.
+            </Text>
+          </Container>
+
+          <div className={classes.controls}>
+            <Button
+              component={'a'}
+              href="https://classroom.geleza.app"
+              className="bg-primary"
+              size="lg"
+            >
+              Get Started For Free
+            </Button>
+          </div>
+        </div>
+      </Container>
     </div>
   )
 }
-
-export default CallToAction

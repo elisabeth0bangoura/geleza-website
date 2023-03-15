@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const WhatYouGet = () => {
   return (
     <div>
       <div className="py-16 bg-white">
@@ -16,14 +16,16 @@ const About = () => {
               />
             </div>
             <div className="md:7/12 lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
-                How Geleza works
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-2xl">
+                Wondering...
+              </h1>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
+                How Geleza works?
               </h2>
               <p className="my-8 text-gray-600 ">
                 Geleza offers a classroom portal for students find lessons,
-                connect with teachers and other students, join live sessions,
-                ask questions, and a lot more. Everything you need to make
-                learning easy is available.
+                connect with teachers, practice exams, do their homeworks and a
+                lot more.
               </p>
               <div className="divide-y space-y-4 divide-gray-100 ">
                 <div className="mt-8 flex gap-4 md:items-center">
@@ -70,8 +72,8 @@ const About = () => {
                       Anywhere in the world.
                     </h4>
                     <p className="text-gray-500 ">
-                      Connect and interact with students and teachers from all
-                      over the world.
+                      Find lessons about any subject you want, anywhere in the
+                      world.
                     </p>
                   </div>
                 </div>
@@ -84,4 +86,4 @@ const About = () => {
   )
 }
 
-export default About
+export default WhatYouGet

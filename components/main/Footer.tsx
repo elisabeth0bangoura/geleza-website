@@ -5,6 +5,8 @@ import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
+  IconBrandTiktok,
+  IconBrandFacebook,
 } from '@tabler/icons-react'
 import Link, { LinkProps } from 'next/link'
 
@@ -137,14 +139,37 @@ export default function Footer({ data }: FooterLinksProps) {
           </Text>
 
           <Group spacing={0} className={classes.social} position="right" noWrap>
-            <ActionIcon size="lg">
-              <IconBrandTwitter size="1.05rem" stroke={1.5} />
+            <ActionIcon
+              component="a"
+              target="_blank"
+              href="https://twitter.com/geleza_app"
+              size="lg"
+            >
+              <IconBrandTwitter size={20} stroke={1.5} />
             </ActionIcon>
-            <ActionIcon size="lg">
-              <IconBrandYoutube size="1.05rem" stroke={1.5} />
+            <ActionIcon
+              size="lg"
+              component="a"
+              target="_blank"
+              href="https://www.tiktok.com/@geleza_app"
+            >
+              <IconBrandTiktok size={20} stroke={1.5} />
             </ActionIcon>
-            <ActionIcon size="lg">
-              <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            <ActionIcon
+              size="lg"
+              component="a"
+              target="_blank"
+              href="https://www.instagram.com/geleza_app/"
+            >
+              <IconBrandInstagram size={20} stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon
+              size="lg"
+              component="a"
+              target="_blank"
+              href="https://www.facebook.com/gelezaapp"
+            >
+              <IconBrandFacebook size={20} stroke={1.5} />
             </ActionIcon>
           </Group>
         </div>

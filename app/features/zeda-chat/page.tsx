@@ -2,6 +2,12 @@ import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
 import { CLASS_URL } from '../../../utils/urls'
 
+export const metadata = {
+  title: 'Geleza - Zeda Chat',
+  description:
+    'Meet the ChatGPT Alternative, But With Superpowers. Zeda Chat is an advanced conversational AI chatbot that has been designed with the inclusion of built-in personalities.',
+}
+
 const ZedaChatPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">

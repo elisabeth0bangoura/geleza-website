@@ -3,6 +3,12 @@ import { CallToAction } from '../../components/public/CallToAction'
 import FreePlan from './FreePlan'
 import PaidPlan from './PaidPlan'
 
+export const metadata = {
+  title: 'Geleza - Pricing Plans',
+  description:
+    "Affordable pricing to achieve academic success! Enroll now and discover why Geleza is the best investment you'll ever make in yourself.",
+}
+
 const PricingPage = () => {
   return (
     <div className="bg-gray-900">

@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Lato } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import LayoutWrapper from '../components/main/LayoutWrapper'
 import { MainHeader } from '../components/main/MainHeader'
 import Footer from '../components/main/Footer'

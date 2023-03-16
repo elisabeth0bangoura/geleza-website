@@ -2,6 +2,12 @@ import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
 import { CLASS_URL } from '../../../utils/urls'
 
+export const metadata = {
+  title: 'Geleza - Notes',
+  description:
+    'With organizational tools, cross-platform compatibility, and easy note-taking features, students can easily capture their thoughts, ideas, and lecture notes in one central location.',
+}
+
 const NotesPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">

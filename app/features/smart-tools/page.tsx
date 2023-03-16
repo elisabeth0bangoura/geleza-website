@@ -3,6 +3,12 @@ import { BiArrowToRight } from 'react-icons/bi'
 import smartTools from '../../../data/smartTools'
 import { CLASS_URL } from '../../../utils/urls'
 
+export const metadata = {
+  title: 'Geleza - Smart Tools',
+  description:
+    "A.I powered innovative and cutting-edge tools designed to enhance students' academic performance.",
+}
+
 const SmartToolsPage = () => {
   return (
     <div className="py-20 bg-gray-900">

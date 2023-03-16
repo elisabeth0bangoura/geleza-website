@@ -2,6 +2,12 @@ import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
 import { CLASS_URL } from '../../../utils/urls'
 
+export const metadata = {
+  title: 'Geleza - Zeda Writer',
+  description:
+    'The only content writer tool you need. Transform your writing experience with Zeda Writer, the A.I tool that effortlessly generates essays, letters, reports, and more.',
+}
+
 const ZedaWriterPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">

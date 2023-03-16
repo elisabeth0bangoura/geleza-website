@@ -2,6 +2,12 @@ import React from 'react'
 import { BiCheckCircle } from 'react-icons/bi'
 import PrepPalFaq from './PrepPalFaq'
 
+export const metadata = {
+  title: 'Geleza - PrepPal Exam Tool',
+  description:
+    'Revolutionize your exam preparation with PrepPal, your personal A.I tutor.',
+}
+
 const PrepPal = () => {
   return (
     <div className="bg-gray-900 py-20">

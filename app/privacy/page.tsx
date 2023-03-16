@@ -1,5 +1,11 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'Geleza - Privacy Policy',
+  description:
+    'Before proceeding or creating an account, please read our privacy policy.',
+}
+
 const PrivacyPage = () => {
   return (
     <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">

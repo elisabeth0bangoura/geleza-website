@@ -1,5 +1,11 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'Geleza - Terms & Conditions',
+  description:
+    'Before proceeding or creating an account, please read our terms and conditions.',
+}
+
 const TermsPage = () => {
   return (
     <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">

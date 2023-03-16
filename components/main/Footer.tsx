@@ -111,8 +111,9 @@ export default function Footer({ data }: FooterLinksProps) {
           <div>
             <img src="/logo.png" className="h-10 mb-3" />
             <Text size="sm" color="dimmed">
-              Geleza is a high school extra lessons platform that simplifies the
-              way students learn. <br /> <br /> Geleza is a product of Reavize
+              Geleza is a college and high school learning platform that
+              simplifies the way students learn and prepare for their
+              examinations. <br /> <br /> Geleza is a product of Reavize
               Enterprises.
             </Text>
           </div>

@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Lato } from 'next/font/google'
 import LayoutWrapper from '../components/main/LayoutWrapper'
 import { MainHeader } from '../components/main/MainHeader'
 import Footer from '../components/main/Footer'
@@ -13,7 +13,7 @@ export const metadata = {
 }
 
 const font = Inter({
-  subsets: ['latin'],
+  subsets: ['cyrillic'],
   weight: '400',
 })
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <LayoutWrapper>
           <MainHeader />
-          <main className="pt-16 h-full min-h-screen">{children}</main>
+          <main className="pt-16 h-full min-h-[50vh]">{children}</main>
           <CallToAction />
           <Footer data={footerData} />
         </LayoutWrapper>

@@ -9,7 +9,6 @@ import {
   Text,
   SimpleGrid,
   ThemeIcon,
-  Anchor,
   Divider,
   Center,
   Box,
@@ -20,12 +19,7 @@ import {
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import {
-  IconNotification,
-  IconCode,
   IconBook,
-  IconChartPie3,
-  IconFingerprint,
-  IconCoin,
   IconChevronDown,
   IconVideo,
   IconMessage,
@@ -34,6 +28,8 @@ import {
   IconEdit,
 } from '@tabler/icons-react'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -109,7 +105,7 @@ const features = [
     icon: IconVideo,
     title: 'A.I Powered Lessons',
     description:
-      'Our video and written lessons are created by humans, edited by A.I',
+      'Choose a course or subject, a chapter and let Geleza AI teach you everything.',
     link: '/lessons',
   },
   {
@@ -134,7 +130,7 @@ const features = [
     icon: IconChartBubble,
     title: 'Smart Tools',
     description:
-      'A.I Dictionary, Language Translator, Image Generator and more.',
+      'A.I Dictionary, Language Translator, Text Summarizer and more.',
     link: '/smart-tools',
   },
   {
@@ -151,9 +147,13 @@ export function MainHeader() {
     { toggle: toggleDrawer, close: closeDrawer },
   ] = useDisclosure(false)
 
-  const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
+  const [
+    linksOpened,
+    { toggle: toggleLinks, close: closeLinks },
+  ] = useDisclosure(false)
 
   const { classes, theme } = useStyles()
+  const router = useRouter()
 
   const links = features.map((item) => (
     <UnstyledButton
@@ -178,6 +178,14 @@ export function MainHeader() {
     </UnstyledButton>
   ))
 
+  const path = usePathname()
+
+  useEffect(() => {
+    closeDrawer()
+    closeLinks()
+    window.scrollTo(0, 0)
+  }, [path])
+
   return (
     <Box>
       <Header fixed className="bg-gray-800" height={70} px="md">
@@ -186,7 +194,9 @@ export function MainHeader() {
           position="apart"
           sx={{ height: '100%' }}
         >
-          <img src="/logo.png" className="h-12" />
+          <Link href="/">
+            <img src="/logo.png" className="h-12" />
+          </Link>
 
           <Group
             sx={{ height: '100%' }}
@@ -256,6 +266,14 @@ export function MainHeader() {
               </HoverCard.Dropdown>
             </HoverCard>
 
+            <Link href="/features/zeda-chat" className={classes.link}>
+              <h1 className="flex items-center gap-3">
+                Zeda Chat{' '}
+                <span className="bg-gradient-to-tr from-orange-600 to-yellow-600 px-2 rounded-full">
+                  New 🌟
+                </span>
+              </h1>
+            </Link>
             <Link href="/pricing" className={classes.link}>
               Pricing
             </Link>
@@ -321,6 +339,14 @@ export function MainHeader() {
           <Collapse in={linksOpened}>
             <div className="p-4">{links}</div>
           </Collapse>
+          <Link href="/features/zeda-chat" className={classes.link}>
+            <h1 className="flex items-center gap-3">
+              Zeda Chat{' '}
+              <span className="bg-gradient-to-tr from-orange-600 to-yellow-600 px-2 rounded-full">
+                New 🌟
+              </span>
+            </h1>
+          </Link>
           <Link href="/pricing" className={classes.link}>
             Pricing
           </Link>

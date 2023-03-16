@@ -13,7 +13,7 @@ const About = () => {
           </h1>
           <Badge
             size="lg"
-            className="mt-2 mb-5 font-bold capitalize bg-gradient-to-tl from-purple-600 to-teal-700 text-white"
+            className="mt-2 mb-5 font-bold capitalize bg-gradient-to-tl from-teal-500 to-teal-700 text-white"
           >
             Equals a brighter future.
           </Badge>
@@ -27,7 +27,7 @@ const About = () => {
           </p>
           <br />
           <br />
-          <Link href="/features/smart-tools" className="btn bg-[#02B670]">
+          <Link href="/features/smart-tools" className="btn bg-[#0256b6]">
             More Features
           </Link>
         </div>

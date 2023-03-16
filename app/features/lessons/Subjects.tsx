@@ -13,25 +13,25 @@ const Subjects = () => {
         of <br /> Learners with A.I.-Backed Education
       </h1>
       <p className="text-center text-gray-400 mt-5 text-xl">
-        Geleza offers all major subjects, health and lifestyle lessons, and
-        skills development courses
+        Geleza is able to teach you anything you ask, and help you advance your
+        learning.
       </p>
       <div className="relative py-20">
         <div className="container relative m-auto px-6 text-gray-500 md:px-12">
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
-            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-95 transition-all duration-500 group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
-                className="mx-auto w-24 h-24 rounded-full object-cover"
-                src="/images/subjects.webp"
+                className="mx-auto w-24 h-24 object-contain"
+                src="/svg/learning.svg"
                 alt="illustration"
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                School Subjects
+                Self-Paced Learning
               </h3>
               <p>
-                These include all major subjects such as Mathematics, Physical
-                Sciences, Geography, History, Commerce and More.
+                Choose a high school subject or create a college course, choose
+                the topics you want to learn and let AI do the rest.
               </p>
               <a
                 href={CLASS_URL}
@@ -40,19 +40,19 @@ const Subjects = () => {
                 <BiArrowToRight />
               </a>
             </div>
-            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-95 border-b-8 border-primary scale-105 transition-all duration-500 group space-y-6  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
-                className="mx-auto w-24 h-24 rounded-full object-cover"
-                src="/images/social.webp"
+                className="mx-auto w-24 h-24 object-contain"
+                src="/svg/chat.svg"
                 alt="illustration"
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Social Lessons
+                Tutor's Assistance
               </h3>
               <p>
-                Social lessons include health lessons, relationship, mental &
-                physical fitness, psychology and more.
+                Are you stuck on a lesson? Do not worry. Just chat with any of
+                our available tutors and they will you.
               </p>
 
               <a
@@ -62,19 +62,19 @@ const Subjects = () => {
                 <BiArrowToRight />
               </a>
             </div>
-            <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
+            <div className="hover:scale-95 transition-all duration-500 group space-y-6 border border-gray-100  rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
-                className="mx-auto w-24 h-24 object-cover rounded-full"
-                src="/images/coding.webp"
+                className="mx-auto w-24 h-24 object-contain"
+                src="/svg/pencil.svg"
                 alt="illustration"
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Extra Lessons
+                Test Your Skills
               </h3>
               <p>
-                This includes music lessons, programming, drawing, and any other
-                courses that can help develop skills.
+                When you are confident that you have learned enough, you can use
+                PrepPal AI to test and grade your skills.
               </p>
               <a
                 href={CLASS_URL}

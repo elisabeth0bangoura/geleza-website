@@ -15,7 +15,7 @@ const Marketing = () => {
           src="/svg/book.svg"
         />
         <Badge color="teal" size="xl" className="mt-5">
-          Trusted by +140K Students & Parents
+          Trusted by +140K Students
         </Badge>
         <h1 className="mt-5 text-4xl md:text-6xl text-center font-black text-gray-50">
           Join us today and transform <br className="hidden lg:inline" /> the

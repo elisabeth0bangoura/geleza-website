@@ -2,13 +2,7 @@
 
 import { Button, Card, Textarea, TextInput } from '@mantine/core'
 import React, { useState } from 'react'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaMailBulk,
-  FaTiktok,
-  FaTwitter,
-} from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa'
 import { toast } from 'react-toastify'
 import directus from '../../utils/directus'
 
@@ -109,7 +103,7 @@ const HelpForm = () => {
             <a
               className="bg-gradient-to-br from-blue-700 to-purple-700 px-10 py-2.5 flex items-center gap-3 font-bold text-white"
               target="_blank"
-              href="mailto:support@geleza.app"
+              href="https://www.tiktok.com/@geleza_app"
             >
               <FaTiktok size={20} />
               TikTok
@@ -133,7 +127,7 @@ const HelpForm = () => {
             <a
               className="bg-blue-600 px-10 py-2.5 flex items-center gap-3 font-bold text-white"
               target="_blank"
-              href="https://twitter.com/geleza_app"
+              href="https://www.facebook.com/gelezaapp"
             >
               <FaFacebook size={20} />
               Facebook

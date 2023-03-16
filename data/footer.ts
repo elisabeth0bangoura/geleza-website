@@ -14,10 +14,10 @@ const footerData = [
         label: 'Help',
         link: '/help',
       },
-      {
-        label: 'Blog',
-        link: '/blog',
-      },
+      // {
+      //   label: 'Blog',
+      //   link: '/blog',
+      // },
       {
         label: 'Terms & Conditions',
         link: '/terms',

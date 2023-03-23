@@ -29,8 +29,8 @@ const PaidPlan = () => {
         <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
         <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Tasks & Reminders</h1>
-        <h1 className="mb-2 text-sm">🌟 Courses & Lessons</h1>
         <h1 className="mb-2 text-sm">🌟 A.I Dictionary</h1>
+        <h1 className="mb-2 text-sm">🌟 Courses & Lessons</h1>
         <h1 className="mb-2 text-sm">🌟 Image Generator</h1>
         <h1 className="mb-2 text-sm">🌟 Zeda Chat & Writer</h1>
         <h1 className="mb-2 text-sm">🌟 Text Summarizer Tools</h1>

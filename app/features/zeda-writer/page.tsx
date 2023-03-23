@@ -116,8 +116,7 @@ const ZedaWriterPage = () => {
               />
               <h3 className="text-2xl font-bold text-gray-800">Step 3</h3>
               <p>
-                Generate your writing, save it to your notes, copy or print it
-                out as you wish. You can save your writing to read later.
+                Generate your writing with the specified title, tone, and number of words. You can save your writing as a PDF to read later.
               </p>
               <a
                 href={CLASS_URL}

@@ -5,11 +5,11 @@ import lessonFaq from '../../../data/lessonFaq'
 
 const LessonsFaq = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 px-4">
       <div className="mx-auto max-w-3xl w-full py-20 flex flex-col justify-center items-center">
         <Badge size="lg">Lessons</Badge>
-        <h1 className="text-4xl font-bold mb-10 text-white">
-          Frequently Asked Asked
+        <h1 className="text-4xl font-bold mb-10 text-white text-center">
+          Frequently Asked Questions
         </h1>
         <Accordion className="w-full">
           {lessonFaq?.map((faq: any, index: number) => {

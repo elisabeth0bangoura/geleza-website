@@ -7,8 +7,8 @@ const PrepPalFaq = () => {
   return (
     <div className="mx-auto max-w-3xl w-full py-20 flex flex-col justify-center items-center">
       <Badge size="lg">PrepPal</Badge>
-      <h1 className="text-4xl font-bold mb-10 text-white">
-        Frequently Asked Asked
+      <h1 className="text-4xl font-bold mb-10 text-center text-white">
+        Frequently Asked Questions
       </h1>
       <Accordion className="w-full">
         {preppalFaq?.map((faq: any, index: number) => {

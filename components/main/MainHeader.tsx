@@ -130,7 +130,7 @@ const features = [
     icon: IconChartBubble,
     title: 'Smart Tools',
     description:
-      'A.I Dictionary, Language Translator, Text Summarizer and more.',
+      'Task Manager, Documents Manager, A.I Dictionary, Text Summarizer and more.',
     link: '/smart-tools',
   },
   {

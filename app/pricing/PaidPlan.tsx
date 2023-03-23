@@ -12,11 +12,10 @@ const PaidPlan = () => {
           <p className="mt-1 font-light">For best exam results.</p>
         </div>
       </div>
-
-      <h1 className="line-through mt-8 text-xl text-red-600">$25.00</h1>
-      <div className="mb-8 flex items-end gap-3 flex-wrap">
+     
+      <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
         <h1 className="text-5xl font-black text-primary flex items-center">
-          $18.00
+          $10.00
         </h1>
         <p>/ Per Month</p>
       </div>
@@ -26,13 +25,17 @@ const PaidPlan = () => {
           This plan includes
         </h6>
 
-        <h1 className="mb-2 text-sm">🌟 Zeda Chat Full Access</h1>
-        <h1 className="mb-2 text-sm">🌟 Zeda Writer Full Access</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited PrepPal Tests</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
+        <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Tasks & Reminders</h1>
         <h1 className="mb-2 text-sm">🌟 Courses & Lessons</h1>
-        <h1 className="mb-2 text-sm">🌟 Smart Tools</h1>
+        <h1 className="mb-2 text-sm">🌟 A.I Dictionary</h1>
+        <h1 className="mb-2 text-sm">🌟 Image Generator</h1>
+        <h1 className="mb-2 text-sm">🌟 Zeda Chat & Writer</h1>
+        <h1 className="mb-2 text-sm">🌟 Text Summarizer Tools</h1>
         <h1 className="mb-2 text-sm">🌟 Teacher's Assistant</h1>
+        <h1 className="mb-2 text-sm">🌟 Additional New Features</h1>
       </div>
 
       <Button

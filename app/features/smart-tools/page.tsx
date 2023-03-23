@@ -32,7 +32,7 @@ const SmartToolsPage = () => {
         </a>
       </div>
 
-      <div className="!text-gray-800 px-5">
+      <div className="!text-gray-800">
         <div className="relative py-20">
           <div className="container relative m-auto px-6 text-gray-500 md:px-12">
             <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
@@ -61,6 +61,34 @@ const SmartToolsPage = () => {
                   </div>
                 )
               })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-10 px-4 bg-white mb-10 rounded-3xl">
+        <div className="xl:container m-auto px-3 text-gray-600 md:px-12 xl:px-16">
+          <div className=" lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
+            <div className="flex justify-center items-center">
+              <img
+                src="/svg/pencil.svg"
+                alt="image"
+                loading="lazy"
+                width=""
+                height=""
+              />
+
+            </div>
+            <div className="md:7/12 lg:w-1/2">
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-2xl">
+                Do more with
+              </h1>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
+                Text Extender & Summarizer
+              </h2>
+              <p className="my-8 text-gray-600 ">
+               By using advanced algorithms, Text Extender can analyze and expand on existing text to create more in-depth and comprehensive content. <br /> <br /> You can also summarize any form of text you want to save time reading and focus on getting key points.
+              </p>
             </div>
           </div>
         </div>

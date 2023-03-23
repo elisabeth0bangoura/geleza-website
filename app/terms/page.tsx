@@ -35,8 +35,8 @@ const TermsPage = () => {
         refers to both the Client and ourselves. All terms refer to the offer,
         acceptance and consideration of payment necessary to undertake the
         process of our assistance to the Client in the most appropriate manner
-        for the express purpose of meeting the Client’s needs in respect of
-        provision of the Company’s stated services, in accordance with and
+        for the express purpose of meeting the Client's needs in respect of
+        provision of the Company's stated services, in accordance with and
         subject to, prevailing law of Netherlands. Any use of the above
         terminology or other words in the singular, plural, capitalization
         and/or he/she or they, are taken as interchangeable and therefore as
@@ -79,15 +79,6 @@ const TermsPage = () => {
         <li>Reproduce, duplicate or copy material from geleza.app</li>
         <li>Redistribute content from geleza.app</li>
       </ul>
-
-      <p>
-        This Agreement shall begin on the date hereof. Our Terms and Conditions
-        were created with the help of the{' '}
-        <a href="https://www.termsandconditionsgenerator.com/">
-          Free Terms and Conditions Generator
-        </a>
-        .
-      </p>
 
       <p>
         Parts of this website offer an opportunity for users to post and

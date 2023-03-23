@@ -41,7 +41,7 @@ const ZedaChatPage = () => {
       </div>
 
       <div className="relative py-20">
-        <div className="container relative m-auto px-6 text-gray-500 md:px-12">
+        <div className="container relative m-auto px-3 text-gray-500 md:px-12">
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
             <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img
@@ -97,8 +97,7 @@ const ZedaChatPage = () => {
                 Save Responses.
               </h3>
               <p>
-                You can save any Zeda Chat response, print it or share it on
-                social media with school mates & friends.
+                You can save any Zeda Chat responses as notes or download as PDF to refer to in the future.
               </p>
               <a
                 href={CLASS_URL}
@@ -128,7 +127,7 @@ const ZedaChatPage = () => {
                 More about...
               </h1>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
-                The Best A.I Chat!
+                The Best A.I ChatBot!
               </h2>
               <p className="my-8 text-gray-600 ">
                 With its advanced natural language processing capabilities, Zeda

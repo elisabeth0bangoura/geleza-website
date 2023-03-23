@@ -65,7 +65,7 @@ const NotesPage = () => {
         <h1 className="mb-10 font-bold capitalize text-4xl text-white text-center">
           What you can do with notes
         </h1>
-        <div className="container relative m-auto px-6 text-gray-500 md:px-12">
+        <div className="container relative m-auto px-3 text-gray-500 md:px-12">
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
             <div className="hover:scale-105 transition-all duration-500 group space-y-6 border border-gray-100 rounded-3xl bg-white  px-8 py-12 text-center shadow-2xl shadow-gray-400 ">
               <img

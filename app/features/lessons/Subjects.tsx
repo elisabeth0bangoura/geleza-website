@@ -52,7 +52,7 @@ const Subjects = () => {
               </h3>
               <p>
                 Are you stuck on a lesson? Do not worry. Just chat with any of
-                our available tutors and they will you.
+                our available tutors and they will help you.
               </p>
 
               <a

@@ -10,7 +10,7 @@ export const metadata = {
 
 const PrepPal = () => {
   return (
-    <div className="bg-gray-900 py-20">
+    <div className="bg-gray-900 py-20 px-4">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-gray-200  md:text-6xl text-4xl font-black">
           Meet{' '}
@@ -51,7 +51,7 @@ const PrepPal = () => {
               </h2>
               <p className="my-8 text-gray-600 ">
                 To begin, select the topic, number of questions, and question
-                format - true/false, multi-choice, or Q&A. PrepPal will then
+                format - true/false or multi-choice. PrepPal will then
                 create random exam questions to assess your abilities.
               </p>
               <div className="divide-y space-y-4 divide-gray-10 ">

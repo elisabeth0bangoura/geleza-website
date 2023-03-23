@@ -2,12 +2,12 @@ const lessonFaq = [
   {
     question: 'What kind of lessons are available?',
     answer:
-      'Geleza provides only written lessons. You can easily download written materials and access them offline. Video lessons will be available in the future.',
+      'Geleza provides only written lessons. Video lessons will be available in the future.',
   },
   {
     question: 'Are lessons available on a free plan?',
     answer:
-      'Lessons as well as the ability to talk to teachers on a one-to-one session are currently not available not available on the free plan.',
+      'Lessons as well as the ability to talk to teachers on a one-to-one session are currently not available on the free plan.',
   },
   {
     question: 'How long is each lesson?',

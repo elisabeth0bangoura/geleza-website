@@ -25,13 +25,17 @@ const FreePlan = () => {
           This plan includes
         </h6>
 
-        <h1 className="mb-2 text-sm">🌟 25 Zeda Chat Replies / Day</h1>
-        <h1 className="mb-2 text-sm">🌟 5 Zeda Writer Content / Day</h1>
-        <h1 className="mb-2 text-sm">🌟 2 PrepPal Tests / Month</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
+        <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Tasks & Reminders</h1>
         <h1 className="mb-2 text-sm">❌ Courses & Lessons</h1>
-        <h1 className="mb-2 text-sm">❌ Smart Tools</h1>
+        <h1 className="mb-2 text-sm">❌ A.I Dictionary</h1>
+        <h1 className="mb-2 text-sm">❌ Image Generator</h1>
+        <h1 className="mb-2 text-sm">❌ Zeda Chat & Writer</h1>
+        <h1 className="mb-2 text-sm">❌ Text Summarizer Tools</h1>
         <h1 className="mb-2 text-sm">❌ Teacher's Assistant</h1>
+        <h1 className="mb-2 text-sm">❌ Additional New Features</h1>
       </div>
 
       <Button

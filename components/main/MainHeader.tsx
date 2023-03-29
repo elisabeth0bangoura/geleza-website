@@ -101,13 +101,13 @@ const useStyles = createStyles((theme) => ({
 }))
 
 const features = [
-  {
-    icon: IconVideo,
-    title: 'A.I Powered Lessons',
-    description:
-      'Choose a course or subject, a chapter and let Geleza AI teach you everything.',
-    link: '/lessons',
-  },
+  // {
+  //   icon: IconVideo,
+  //   title: 'A.I Powered Lessons',
+  //   description:
+  //     'Choose a course or subject, a chapter and let Geleza AI teach you everything.',
+  //   link: '/lessons',
+  // },
   {
     icon: IconBook,
     title: 'PrepPal - Exam Tools',
@@ -130,7 +130,7 @@ const features = [
     icon: IconChartBubble,
     title: 'Smart Tools',
     description:
-      'Task Manager, Documents Manager, A.I Dictionary, Text Summarizer and more.',
+      'Task Manager, Documents Manager, A.I Dictionary, and more.',
     link: '/smart-tools',
   },
   {

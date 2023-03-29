@@ -32,10 +32,6 @@ const footerData = [
     title: 'Features',
     links: [
       {
-        label: 'Lessons',
-        link: '/features/lessons',
-      },
-      {
         label: 'PrepPal - Exam Tools',
         link: '/features/preppal',
       },

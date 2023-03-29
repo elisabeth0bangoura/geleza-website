@@ -84,10 +84,10 @@ const SmartToolsPage = () => {
                 Do more with
               </h1>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
-                Text Extender & Summarizer
+              Smart Docs & Summarizer
               </h2>
               <p className="my-8 text-gray-600 ">
-               By using advanced algorithms, Text Extender can analyze and expand on existing text to create more in-depth and comprehensive content. <br /> <br /> You can also summarize any form of text you want to save time reading and focus on getting key points.
+              Upload and manage your documents and study materials the smart way. Sort and group your documents by folders and types, summarize the context of your documents and more.
               </p>
             </div>
           </div>

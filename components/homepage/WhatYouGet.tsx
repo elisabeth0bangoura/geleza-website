@@ -23,8 +23,7 @@ const WhatYouGet = () => {
                 How Geleza works?
               </h2>
               <p className="my-8 text-gray-600 ">
-                Geleza offers a classroom portal for students create and find
-                lessons, connect with tutors, practice exams, do their homeworks
+                Geleza offers a portal for students manage their learning, write essays, letters & more, practice exams, do their homeworks
                 & assignments and a lot more.
               </p>
               <div className="divide-y space-y-4 divide-gray-100 ">
@@ -45,10 +44,10 @@ const WhatYouGet = () => {
                   </div>
                   <div className="w-5/6">
                     <h4 className="font-semibold text-lg text-gray-700 ">
-                      Chat with tutors.
+                      AI Chat 
                     </h4>
                     <p className="text-gray-500 ">
-                      Students can ask questions to tutors anytime they want.
+                      Students can chat with a fully trained AI that can help with anything.
                     </p>
                   </div>
                 </div>
@@ -72,7 +71,7 @@ const WhatYouGet = () => {
                       Anywhere in the world.
                     </h4>
                     <p className="text-gray-500 ">
-                      Create or choose a course and learn anything from anywhere
+                      Access Geleza and learn from anywhere
                       around the world.
                     </p>
                   </div>

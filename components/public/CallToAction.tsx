@@ -127,10 +127,10 @@ export function CallToAction() {
             <Button
               component={'a'}
               href="https://classroom.geleza.app"
-              className="bg-primary"
+              className="bg-primary px-10"
               size="lg"
             >
-              Get Started For Free
+              Try It Today
             </Button>
           </div>
         </div>

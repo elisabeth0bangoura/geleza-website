@@ -5,11 +5,6 @@ const lessonFaq = [
       'Geleza provides only written lessons. Video lessons will be available in the future.',
   },
   {
-    question: 'Are lessons available on a free plan?',
-    answer:
-      'Lessons as well as the ability to talk to teachers on a one-to-one session are currently not available on the free plan.',
-  },
-  {
     question: 'How long is each lesson?',
     answer:
       'You choose your own pace and how much you want to learn, there is no fixed length or duration for a course or lesson.',

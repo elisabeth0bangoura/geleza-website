@@ -39,12 +39,10 @@ const Hero = () => {
               target="_blank"
               className="btn border-2 rounded-full bg-white px-24 border-white  text-dark text-lg font-bold"
             >
-              Start For Free
+             Try It Today
             </a>
           </div>
-          <Badge size="xs" className="capitalize py-2 mt-7 font-bold text-sm">
-            <p className="py-2">No Credit Card Required</p>
-          </Badge>
+         
         </div>
         <div>
           <img src="/cover.png" className="h-full w-full object-contain" />

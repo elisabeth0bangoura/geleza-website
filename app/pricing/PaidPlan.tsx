@@ -8,14 +8,14 @@ const PaidPlan = () => {
       <div className="flex items-center gap-3">
         <img src="/svg/pencil.svg" className="h-10 w-10" />
         <div>
-          <h6 className="font-bold text-2xl text-white">Pro Plan - 3 Days Trial</h6>
+          <h6 className="font-bold text-2xl text-white">Pro Plan</h6>
           <p className="mt-1 font-light">For best exam results.</p>
         </div>
       </div>
      
       <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
         <h1 className="text-5xl font-black text-primary flex items-center">
-          $8.00
+          $15.00
         </h1>
         <p>/ Per Month</p>
       </div>
@@ -25,16 +25,18 @@ const PaidPlan = () => {
           This plan includes
         </h6>
 
+        <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
+        <h1 className="mb-2 text-sm">🌟 AI Chat - ChatGPT for Students</h1>
+        <h1 className="mb-2 text-sm">🌟 PrepPal - Exam Tools</h1>
+        <h1 className="mb-2 text-sm">🌟 Essay & Content Writer</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
-        <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Tasks & Reminders</h1>
-        <h1 className="mb-2 text-sm">🌟 A.I Dictionary</h1>
-        <h1 className="mb-2 text-sm">🌟 Video Lessons</h1>
-        <h1 className="mb-2 text-sm">🌟 Image Generator</h1>
+        <h1 className="mb-2 text-sm">🌟 Study Groups</h1>
+        <h1 className="mb-2 text-sm">🌟 The Library</h1>
+        <h1 className="mb-2 text-sm">🌟 AI Dictionary</h1>
+        <h1 className="mb-2 text-sm">🌟 AI Art Generator</h1>
         <h1 className="mb-2 text-sm">🌟 Zeda Chat & Writer</h1>
-        <h1 className="mb-2 text-sm">🌟 Teacher's Assistant</h1>
-        <h1 className="mb-2 text-sm">🌟 Additional New Features</h1>
+        <h1 className="mb-2 text-sm">🌟 All Upcoming Features</h1>
       </div>
 
       <Button
@@ -43,7 +45,7 @@ const PaidPlan = () => {
         size="lg"
         className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
       >
-        Start For Free
+        Try It Today
       </Button>
     </Card>
   )

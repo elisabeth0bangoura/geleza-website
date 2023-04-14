@@ -1,8 +1,6 @@
 'use client'
 import { Badge } from '@mantine/core'
-import Link from 'next/link'
 import React from 'react'
-import { BiInfoCircle } from 'react-icons/bi'
 import { CLASS_URL } from '../../utils/urls'
 
 const Hero = () => {
@@ -15,23 +13,23 @@ const Hero = () => {
           </Badge>
           <br />
           <h1
-            className="text-5xl md:text-7xl font-black mb-7 mt-6 text-white"
+            className="text-5xl md:text-6xl font-black mb-7 mt-6 text-white"
             style={{
               textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
             }}
           >
+            #1 🎉
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
               A.I Powered
             </span>{' '}
             Students Tools{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
-              & Lessons
+              & Content Writer
             </span>
             .
           </h1>
           <p className="mb-14 font-light text-lg text-white">
-            Study and prepare for exams with Geleza as your study mate and
-            companion. Built for high school and college students.
+            Write essays & homeworks, take notes, join study groups, and prepare for exams with Geleza as your study mate. Built for high school and college students.
           </p>
           <div>
             <a
@@ -39,7 +37,7 @@ const Hero = () => {
               target="_blank"
               className="btn border-2 rounded-full bg-white px-24 border-white  text-dark text-lg font-bold"
             >
-             Try It Today
+             Start For Free
             </a>
           </div>
          

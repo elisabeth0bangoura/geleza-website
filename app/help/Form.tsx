@@ -135,17 +135,17 @@ const HelpForm = () => {
           </div>
 
           <p>
-            For business and related inquiries, please contact our company
-            (Reavize) at business@reavize.com or visit the website.
+            For business and related inquiries, please contact us on
+            support@geleza.app or accounts@geleza.app.
           </p>
           <br />
           <br />
           <a
             className="btn shadow-none bg-white text-gray-900"
-            href="https://reavize.com/"
+            href="https://classroom.geleza.app/dashboard"
             target="_blank"
           >
-            Visit reavize.com
+            Go to class
           </a>
         </Card>
         <Card className="bg-primary p-10">

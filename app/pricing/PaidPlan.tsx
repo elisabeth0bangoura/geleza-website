@@ -6,16 +6,16 @@ const PaidPlan = () => {
   return (
     <Card className="bg-gray-800 py-5 px-10">
       <div className="flex items-center gap-3">
-        <img src="/svg/pencil.svg" className="h-10 w-10" />
+        <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
-          <h6 className="font-bold text-2xl text-white">Pro Plan</h6>
-          <p className="mt-1 font-light">For best exam results.</p>
+          <h6 className="font-bold text-3xl text-white">3 Days Free</h6>
+          <p className="mt-1 font-light">🎉 Limited Time Offer 🎉</p>
         </div>
       </div>
      
       <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
-        <h1 className="text-5xl font-black text-primary flex items-center">
-          $15.00
+        <h1 className="text-5xl font-black text-primary">
+          <span className='line-through text-red-500 text-3xl'>$15</span>{" "}$10.00
         </h1>
         <p>/ Per Month</p>
       </div>
@@ -45,7 +45,7 @@ const PaidPlan = () => {
         size="lg"
         className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
       >
-        Try It Today
+        Start For Free
       </Button>
     </Card>
   )

@@ -8,8 +8,8 @@ const PaidPlan = () => {
       <div className="flex items-center gap-3">
         <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
-          <h6 className="font-bold text-3xl text-white">3 Days Free</h6>
-          <p className="mt-1 font-light">🎉 Limited Time Offer 🎉</p>
+          <h6 className="font-bold text-2xl text-white">Special Offer</h6>
+          <p className="mt-1 font-light">🎉 More than 30% off! 🎉</p>
         </div>
       </div>
      
@@ -32,7 +32,6 @@ const PaidPlan = () => {
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
         <h1 className="mb-2 text-sm">🌟 Study Groups</h1>
-        <h1 className="mb-2 text-sm">🌟 The Library</h1>
         <h1 className="mb-2 text-sm">🌟 AI Dictionary</h1>
         <h1 className="mb-2 text-sm">🌟 AI Art Generator</h1>
         <h1 className="mb-2 text-sm">🌟 Zeda Chat & Writer</h1>
@@ -45,7 +44,7 @@ const PaidPlan = () => {
         size="lg"
         className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
       >
-        Start For Free
+        Get Started
       </Button>
     </Card>
   )

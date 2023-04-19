@@ -5,10 +5,12 @@ import React from 'react'
 const FreePlan = () => {
   return (
     <Card className="bg-gray-800 py-5 px-10">
+    
+
       <div className="flex items-center gap-3">
-        <img src="/svg/pencil.svg" className="h-10 w-10" />
+        <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
-          <h6 className="font-bold text-2xl text-white">Student Lite</h6>
+          <h6 className="font-bold text-2xl text-white">Free Plan</h6>
           <p className="mt-1 font-light">Perfect to get started.</p>
         </div>
       </div>
@@ -25,16 +27,17 @@ const FreePlan = () => {
           This plan includes
         </h6>
 
-        <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
         <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Tasks & Reminders</h1>
-        <h1 className="mb-2 text-sm">🌟 A.I Dictionary</h1>
-        <h1 className="mb-2 text-sm">❌ Video Lessons</h1>
-        <h1 className="mb-2 text-sm">❌ Image Generator</h1>
+        <h1 className="mb-2 text-sm">🌟 AI Chat - 2 Days Free</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
+        <h1 className="mb-2 text-sm">🌟 AI Dictionary</h1>
+        <h1 className="mb-2 text-sm">❌ PrepPal - Exam Tools</h1>
+        <h1 className="mb-2 text-sm">❌ Essay & Content Writer</h1>
+        <h1 className="mb-2 text-sm">❌ Unlimited Documents</h1>
+        <h1 className="mb-2 text-sm">❌ Study Groups</h1>
+        <h1 className="mb-2 text-sm">❌ AI Art Generator</h1>
         <h1 className="mb-2 text-sm">❌ Zeda Chat & Writer</h1>
-        <h1 className="mb-2 text-sm">❌ Teacher's Assistant</h1>
-        <h1 className="mb-2 text-sm">❌ Additional New Features</h1>
+        <h1 className="mb-2 text-sm">❌ All Upcoming Features</h1>
       </div>
 
       <Button
@@ -43,7 +46,7 @@ const FreePlan = () => {
         size="lg"
         className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
       >
-        Get Started
+       Start For Free
       </Button>
     </Card>
   )

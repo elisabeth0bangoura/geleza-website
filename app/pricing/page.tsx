@@ -1,4 +1,5 @@
 import React from 'react'
+import FreePlan from './FreePlan'
 import PaidPlan from './PaidPlan'
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 const PricingPage = () => {
   return (
     <div className="bg-gray-900">
-      <div className="mx-auto py-20 max-w-lg px-5 w-full">
+      <div className="mx-auto py-20 max-w-4xl px-5 w-full">
         <div className="mb-8 flex items-center justify-center">
           <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
           <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
@@ -28,7 +29,8 @@ const PricingPage = () => {
           Affordable Pricing to Achieve Academic Success!
         </h2>
 
-        <div className="grid grid-cols-1gap-10 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20">
+          <FreePlan/>
           <PaidPlan />
         </div>
       </div>

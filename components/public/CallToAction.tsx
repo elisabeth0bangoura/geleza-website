@@ -130,7 +130,7 @@ export function CallToAction() {
               className="bg-primary px-10"
               size="lg"
             >
-              Try It For Free Today
+              Try It For Free
             </Button>
           </div>
         </div>

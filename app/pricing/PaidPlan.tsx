@@ -9,7 +9,7 @@ const PaidPlan = () => {
         <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
           <h6 className="font-bold text-2xl text-white">Special Offer</h6>
-          <p className="mt-1 font-light">🎉 Get 50% off! Until June🎉</p>
+          <p className="mt-1 font-light">🎉 Get 50% off! Until June 🎉</p>
         </div>
       </div>
      

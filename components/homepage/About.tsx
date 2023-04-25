@@ -13,7 +13,7 @@ const About = () => {
           </h1>
           <Badge
             size="lg"
-            className="mt-2 mb-5 font-bold capitalize bg-gradient-to-tl from-teal-500 to-teal-700 text-white"
+            className="mt-2 mb-5 font-bold capitalize bg-gradient-to-tl from-orange-500 to-red-700 text-white"
           >
             Equals a brighter future.
           </Badge>

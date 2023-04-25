@@ -4,7 +4,6 @@ import { Button, Card, Textarea, TextInput } from '@mantine/core'
 import React, { useState } from 'react'
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa'
 import { toast } from 'react-toastify'
-import directus from '../../utils/directus'
 
 type Form = {
   name: string
@@ -33,29 +32,9 @@ const HelpForm = () => {
       form.message
     ) {
       setLoading(true)
-      await directus
-        .items('help')
-        .createOne({
-          name: form.name,
-          surname: form.surname,
-          email: form.email,
-          subject: form.subject,
-          message: form.message,
-        })
-        .then(() => {
-          setLoading(false)
-          setForm({
-            name: '',
-            surname: '',
-            email: '',
-            message: '',
-            subject: '',
-          })
-          toast.success('Message sent! We will get in touch with you')
-        })
-        .catch(() => {
-          toast.error('Something went wrong. Please try again')
-        })
+     setTimeout(() => {
+      toast.success("Thank you. We will get back to you!")
+     }, 3000);
     } else {
       toast.error('Please fill all the required fields')
     }

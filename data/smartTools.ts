@@ -1,9 +1,9 @@
 const smartTools = [
   {
-    title: 'A.I Dictionary',
-    image: 'locale.svg',
+    title: 'File Manager',
+    image: 'file.svg',
     description:
-      'This is a powerful tool that leverages artificial intelligence to provide comprehensive definitions, synonyms, and antonyms for words.',
+      'Save as much files as you want with Geleza. Save time browsing through your computer for study notes. Organize your files by folders and type.',
   },
   {
     title: 'Task Manager (Coming Soon)',
@@ -12,10 +12,10 @@ const smartTools = [
       'Never forget a homework or any other task. Simply create a task, choose a due date and Geleza will make sure you do your tasks in time.',
   },
   {
-    title: 'Image Generator',
+    title: 'Notes.',
     image: 'info.svg',
     description:
-      'This tool is ideal for creating images for educational purposes. Simply define the image you want, the format and how many images you want.',
+      'Our notes app is a powerful and user-friendly tool designed to help students organize their studies and take notes more efficiently.',
   },
 ]
 export default smartTools

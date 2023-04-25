@@ -28,15 +28,13 @@ const FreePlan = () => {
         </h6>
 
         <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
-        <h1 className="mb-2 text-sm">🌟 AI Chat - 2 Days Free</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Files & Folders</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
-        <h1 className="mb-2 text-sm">🌟 AI Dictionary</h1>
-        <h1 className="mb-2 text-sm">❌ PrepPal - Exam Tools</h1>
-        <h1 className="mb-2 text-sm">❌ Essay & Content Writer</h1>
-        <h1 className="mb-2 text-sm">❌ Unlimited Documents</h1>
-        <h1 className="mb-2 text-sm">❌ Study Groups</h1>
-        <h1 className="mb-2 text-sm">❌ AI Art Generator</h1>
-        <h1 className="mb-2 text-sm">❌ Zeda Chat & Writer</h1>
+        <h1 className="mb-2 text-sm">❌ Zeda AI Chat</h1>
+        <h1 className="mb-2 text-sm">❌ Content & Essay Writer</h1>
+        <h1 className="mb-2 text-sm">❌ Assignment Writer</h1>
+        <h1 className="mb-2 text-sm">❌ PrepPal - Exam Tool</h1>
+        <h1 className="mb-2 text-sm">❌ The Library</h1>
         <h1 className="mb-2 text-sm">❌ All Upcoming Features</h1>
       </div>
 

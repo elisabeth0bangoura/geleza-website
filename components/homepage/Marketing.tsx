@@ -2,7 +2,6 @@
 import { Badge } from '@mantine/core'
 import Image from 'next/image'
 import React from 'react'
-import { CLASS_URL } from '../../utils/urls'
 
 const Marketing = () => {
   return (
@@ -29,7 +28,7 @@ const Marketing = () => {
 
         <a
           className="px-20 py-4 text-white bg-gradient-to-br from-blue-500 rounded-full via-blue-700 to-purple-700 font-normal mt-5 text-xl"
-          href={CLASS_URL}
+          href={"https://classroom.geleza.app"}
         >
           Start Learning Now
         </a>

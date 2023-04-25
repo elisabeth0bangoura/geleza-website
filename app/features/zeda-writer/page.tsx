@@ -1,6 +1,5 @@
 import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
-import { CLASS_URL } from '../../../utils/urls'
 
 export const metadata = {
   title: 'Geleza - Zeda Writer',
@@ -52,7 +51,7 @@ const ZedaWriterPage = () => {
                 that effortlessly generates essays, letters, reports, and more.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="capitalize font-bold px-20 py-4 rounded-full bg-gradient-to-tr from-pink-700 to-blue-500 text-white"
               >
                 Try it now
@@ -81,7 +80,7 @@ const ZedaWriterPage = () => {
                 essay, letter, report or any other available options.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -101,7 +100,7 @@ const ZedaWriterPage = () => {
               </p>
 
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -119,7 +118,7 @@ const ZedaWriterPage = () => {
                 Generate your writing with the specified title, tone, and number of words. You can save your writing as a PDF to read later.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />

@@ -1,20 +1,19 @@
 import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
-import { CLASS_URL } from '../../../utils/urls'
 
 export const metadata = {
-  title: 'Geleza - Notes',
+  title: 'Geleza - Assignments Writer',
   description:
-    'With organizational tools, cross-platform compatibility, and easy note-taking features, students can easily capture their thoughts, ideas, and lecture notes in one central location.',
+    'Stuck on an assignment question? Simply head to Geleza and punch in your assignment questions, provide a more information where necessary, and get all the answers and more information to help you understand the solution.',
 }
 
 const NotesPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">
       <h1 className="text-center text-white font-bold mb-2 text-2xl">
-        Geleza Notes
+       Introducing...
       </h1>
-      <div className="mb-8 flex items-center justify-center">
+      <div className="mb-3.5 flex items-center justify-center">
         <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
@@ -23,9 +22,9 @@ const NotesPage = () => {
         <h1 className="text-center text-gray-200 md:text-6xl text-3xl font-black">
           The Best{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
-            Notes App
+            Assignment
           </span>{' '}
-          For Students
+          Writer.
         </h1>
       </div>
 
@@ -33,25 +32,20 @@ const NotesPage = () => {
         <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
           <div className=" lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
             <div className="md:5/12 lg:w-1/2">
-              <img src="/svg/notes.svg" alt="image" loading="lazy" />
+              <img src="/svg/learning.svg" alt="image" loading="lazy" />
             </div>
             <div className="md:7/12 lg:w-1/2">
               <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-2xl">
                 Now you can...
               </h1>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
-                Take notes like a pro!
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900">
+                do assignments like a pro!
               </h2>
               <p className="my-8 text-gray-600 ">
-                Our notes app is a powerful and user-friendly tool designed to
-                help students organize their studies and take notes more
-                efficiently. With organizational tools, cross-platform
-                compatibility, and easy note-taking features, students can
-                easily capture their thoughts, ideas, and lecture notes in one
-                central location.
+               Stuck on an assignment question? Simply head to Geleza and punch in your assignment questions, provide a more information where necessary, and get all the answers and more information to help you understand the solution.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="capitalize font-bold px-20 py-4 rounded-full bg-gradient-to-tr from-pink-700 to-blue-500 text-white"
               >
                 Try it now
@@ -63,7 +57,7 @@ const NotesPage = () => {
 
       <div className="relative py-20">
         <h1 className="mb-10 font-bold capitalize text-4xl text-white text-center">
-          What you can do with notes
+          How Assignment Writer Can Help You.
         </h1>
         <div className="container relative m-auto px-3 text-gray-500 md:px-12">
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
@@ -75,15 +69,13 @@ const NotesPage = () => {
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Search & Filter By Course
+                Any Question, Any Course/Subject.
               </h3>
               <p>
-                You can search and filter your notes by the subject or course
-                you are doing. You can select which subject or course and module
-                you are creating a note for.
+                Assignment writer can answer any academic related question. Our AI is trained to understand and respond to all question, regardless of the course or subjects you are doing.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -97,16 +89,14 @@ const NotesPage = () => {
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Notes Summary
+                Learn From Assignment Answers.
               </h3>
               <p>
-                Let the AI give you a summary of your notes, in just a click of
-                a button. The summary is 100% accurate to the content of the
-                notes and is generated randomly.
+                Let the AI give you a complete answer to your question. Additionally, you will be provided with a more descriptive summary of the answer to help you learn more.
               </p>
 
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -120,15 +110,13 @@ const NotesPage = () => {
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Add Note From Anywhere
+                Any Type Of Question.
               </h3>
               <p>
-                It does not matter where you are chatting to Zeda, learning a
-                course or writing an essay, you can create a note from anywhere
-                on Geleza, anytime.
+               You can ask any type of question, from simple direct questions, true or false questions, as well as multiple choice questions. The AI will be able to understand the structure of your question and answer accordingly.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />

@@ -26,6 +26,7 @@ import {
   IconWriting,
   IconChartBubble,
   IconEdit,
+  IconBook2,
 } from '@tabler/icons-react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
@@ -126,18 +127,25 @@ const features = [
     description: 'Essay, Letters & Reports writer powered by A.I. ',
     link: '/zeda-writer',
   },
+  
+  {
+    icon: IconEdit,
+    title: 'Assignment Writer',
+    description: 'Write your assignments with the help of Geleza AI',
+    link: '/assignments',
+  },
+  {
+    icon: IconBook2,
+    title: 'The Library',
+    description: 'Find anything to read from facts, articles, etc.',
+    link: '/library',
+  },
   {
     icon: IconChartBubble,
     title: 'Smart Tools',
     description:
-      'Task Manager, Documents Manager, A.I Dictionary, and more.',
+      'Task Manager, Documents Manager, Study Notes, and more.',
     link: '/smart-tools',
-  },
-  {
-    icon: IconEdit,
-    title: 'Notes',
-    description: 'Take your study notes with you anywhere you go.',
-    link: '/notes',
   },
 ]
 
@@ -250,7 +258,7 @@ export function MainHeader() {
                       </Text>
                       <Text size="xs" color="dimmed">
                         Sign in and improve your studies with our A.I powered
-                        lessons.
+                        tools.
                       </Text>
                     </div>
                     <Button
@@ -266,9 +274,9 @@ export function MainHeader() {
               </HoverCard.Dropdown>
             </HoverCard>
 
-            <Link href="/features/zeda-chat" className={classes.link}>
+            <Link href="/features/assignments" className={classes.link}>
               <h1 className="flex items-center gap-3">
-                Zeda Chat{' '}
+                Assignment Writer{' '}
                 <span className="bg-gradient-to-tr from-orange-600 to-yellow-600 px-2 rounded-full">
                   New 🌟
                 </span>

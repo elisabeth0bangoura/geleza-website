@@ -1,7 +1,6 @@
 import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
 import smartTools from '../../../data/smartTools'
-import { CLASS_URL } from '../../../utils/urls'
 
 export const metadata = {
   title: 'Geleza - Smart Tools',
@@ -53,7 +52,7 @@ const SmartToolsPage = () => {
                     </h3>
                     <p>{item?.description}</p>
                     <a
-                      href={CLASS_URL}
+                      href={"https://classroom.geleza.app"}
                       className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
                     >
                       <BiArrowToRight />

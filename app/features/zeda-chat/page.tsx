@@ -1,6 +1,5 @@
 import React from 'react'
 import { BiArrowToRight } from 'react-icons/bi'
-import { CLASS_URL } from '../../../utils/urls'
 
 export const metadata = {
   title: 'Geleza - Zeda Chat',
@@ -33,7 +32,7 @@ const ZedaChatPage = () => {
         </p>
         <a
           className="px-20 py-4 text-white bg-gradient-to-br from-blue-500 rounded-full via-blue-700 to-purple-700 font-normal mt-8 text-xl"
-          href={CLASS_URL}
+          href={"https://classroom.geleza.app"}
         >
           Start Chatting Now
         </a>
@@ -58,7 +57,7 @@ const ZedaChatPage = () => {
                 therapist, relationship coach, etc.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -80,7 +79,7 @@ const ZedaChatPage = () => {
               </p>
 
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />
@@ -94,13 +93,13 @@ const ZedaChatPage = () => {
                 loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-800">
-                Save Responses.
+                Copy Responses.
               </h3>
               <p>
-                You can save any Zeda Chat responses as notes or download as PDF to refer to in the future.
+                You can copy responses with ease, share with classmates or paste them under notes, to read later.
               </p>
               <a
-                href={CLASS_URL}
+                href={"https://classroom.geleza.app"}
                 className="relative mx-auto flex h-10 w-10 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-100  before:transition before:duration-300 group-hover:before:scale-125"
               >
                 <BiArrowToRight />

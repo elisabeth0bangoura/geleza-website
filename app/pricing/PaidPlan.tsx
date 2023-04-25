@@ -9,13 +9,13 @@ const PaidPlan = () => {
         <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
           <h6 className="font-bold text-2xl text-white">Special Offer</h6>
-          <p className="mt-1 font-light">🎉 More than 30% off! 🎉</p>
+          <p className="mt-1 font-light">🎉 Get 50% off! Until June🎉</p>
         </div>
       </div>
      
       <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
         <h1 className="text-5xl font-black text-primary">
-          <span className='line-through text-red-500 text-3xl'>$15</span>{" "}$10.00
+          <span className='line-through text-red-500 text-3xl'>$15</span>{" "}$7.50
         </h1>
         <p>/ Per Month</p>
       </div>
@@ -26,15 +26,13 @@ const PaidPlan = () => {
         </h6>
 
         <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
-        <h1 className="mb-2 text-sm">🌟 AI Chat - ChatGPT for Students</h1>
-        <h1 className="mb-2 text-sm">🌟 PrepPal - Exam Tools</h1>
-        <h1 className="mb-2 text-sm">🌟 Essay & Content Writer</h1>
+        <h1 className="mb-2 text-sm">🌟 Zeda AI Chat</h1>
+        <h1 className="mb-2 text-sm">🌟 Content & Essay Writer</h1>
+        <h1 className="mb-2 text-sm">🌟 Assignment Writer</h1>
+        <h1 className="mb-2 text-sm">🌟 PrepPal - Exam Tool</h1>
+        <h1 className="mb-2 text-sm">🌟 The Library</h1>
+        <h1 className="mb-2 text-sm">🌟 Unlimited Files & Folders</h1>
         <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Documents</h1>
-        <h1 className="mb-2 text-sm">🌟 Study Groups</h1>
-        <h1 className="mb-2 text-sm">🌟 AI Dictionary</h1>
-        <h1 className="mb-2 text-sm">🌟 AI Art Generator</h1>
-        <h1 className="mb-2 text-sm">🌟 Zeda Chat & Writer</h1>
         <h1 className="mb-2 text-sm">🌟 All Upcoming Features</h1>
       </div>
 

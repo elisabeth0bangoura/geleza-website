@@ -1,35 +1,32 @@
-'use client'
+"use client";
 
-import { createStyles, Title, Text, Button, Container } from '@mantine/core'
-import Link from 'next/link'
-import Dots from '../ui/Dots'
+import { createStyles, Title, Text, Button, Container } from "@mantine/core";
+import Link from "next/link";
+import Dots from "../ui/Dots";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    position: 'relative',
+    position: "relative",
     paddingTop: 120,
     paddingBottom: 80,
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       paddingTop: 80,
       paddingBottom: 60,
     },
   },
 
   inner: {
-    position: 'relative',
+    position: "relative",
     zIndex: 1,
   },
 
   dots: {
-    position: 'absolute',
-    color:
-      theme.colorScheme === 'dark'
-        ? theme.colors.dark[5]
-        : theme.colors.gray[1],
+    position: "absolute",
+    color: theme.colors.gray[6],
 
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
     },
   },
 
@@ -39,58 +36,58 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
-    textAlign: 'center',
+    textAlign: "center",
     fontWeight: 800,
     fontSize: 40,
     letterSpacing: -1,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    color: theme.white,
     marginBottom: theme.spacing.xs,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
-    [theme.fn.smallerThan('xs')]: {
+    [theme.fn.smallerThan("xs")]: {
       fontSize: 28,
-      textAlign: 'left',
+      textAlign: "left",
     },
   },
 
   description: {
-    textAlign: 'center',
+    textAlign: "center",
 
-    [theme.fn.smallerThan('xs')]: {
-      textAlign: 'left',
+    [theme.fn.smallerThan("xs")]: {
+      textAlign: "left",
       fontSize: theme.fontSizes.md,
     },
   },
 
   controls: {
     marginTop: theme.spacing.lg,
-    display: 'flex',
-    justifyContent: 'center',
+    display: "flex",
+    justifyContent: "center",
 
-    [theme.fn.smallerThan('xs')]: {
-      flexDirection: 'column',
+    [theme.fn.smallerThan("xs")]: {
+      flexDirection: "column",
     },
   },
 
   control: {
-    '&:not(:first-of-type)': {
+    "&:not(:first-of-type)": {
       marginLeft: theme.spacing.md,
     },
 
-    [theme.fn.smallerThan('xs')]: {
+    [theme.fn.smallerThan("xs")]: {
       height: 42,
       fontSize: theme.fontSizes.md,
 
-      '&:not(:first-of-type)': {
+      "&:not(:first-of-type)": {
         marginTop: theme.spacing.md,
         marginLeft: 0,
       },
     },
   },
-}))
+}));
 
 export function CallToAction() {
-  const { classes } = useStyles()
+  const { classes } = useStyles();
 
   return (
     <div className="bg-gradient-to-br from-gray-800 via-slate-900 to-blue-900">
@@ -102,16 +99,16 @@ export function CallToAction() {
 
         <div className={classes.inner}>
           <Title className={classes.title}>
-            Revolutionize Your Learning <br /> with{' '}
+            Revolutionize Your Learning <br /> with{" "}
             <Text
               component="span"
               className={
-                'text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600'
+                "text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-600"
               }
               inherit
             >
               A.I-Driven
-            </Text>{' '}
+            </Text>{" "}
             Platform!
           </Title>
 
@@ -125,7 +122,7 @@ export function CallToAction() {
 
           <div className={classes.controls}>
             <Button
-              component={'a'}
+              component={"a"}
               href="https://classroom.geleza.app"
               className="bg-primary px-10"
               size="lg"
@@ -136,5 +133,5 @@ export function CallToAction() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

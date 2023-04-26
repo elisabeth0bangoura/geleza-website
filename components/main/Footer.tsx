@@ -1,29 +1,35 @@
-'use client'
+"use client";
 
-import { createStyles, Text, Container, ActionIcon, Group } from '@mantine/core'
+import {
+  createStyles,
+  Text,
+  Container,
+  ActionIcon,
+  Group,
+} from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
   IconBrandTiktok,
   IconBrandFacebook,
-} from '@tabler/icons-react'
-import Link, { LinkProps } from 'next/link'
+} from "@tabler/icons-react";
+import Link, { LinkProps } from "next/link";
 
 const useStyles = createStyles((theme) => ({
   inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
+    display: "flex",
+    justifyContent: "space-between",
 
-    [theme.fn.smallerThan('md')]: {
-      flexDirection: 'column',
-      alignItems: 'center',
+    [theme.fn.smallerThan("md")]: {
+      flexDirection: "column",
+      alignItems: "center",
     },
   },
 
   groups: {
-    display: 'flex',
-    flexWrap: 'wrap',
+    display: "flex",
+    flexWrap: "wrap",
 
     // [theme.fn.smallerThan('md')]: {
     //   display: 'none',
@@ -31,17 +37,14 @@ const useStyles = createStyles((theme) => ({
   },
 
   link: {
-    display: 'block',
-    color:
-      theme.colorScheme === 'dark'
-        ? theme.colors.dark[1]
-        : theme.colors.gray[6],
+    display: "block",
+    color: theme.colors.dark[1],
     fontSize: theme.fontSizes.sm,
     paddingTop: 3,
     paddingBottom: 3,
 
-    '&:hover': {
-      textDecoration: 'underline',
+    "&:hover": {
+      textDecoration: "underline",
     },
   },
 
@@ -50,41 +53,41 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 700,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     marginBottom: `calc(${theme.spacing.xs} / 2)`,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    color: theme.white,
   },
 
   afterFooter: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
     marginTop: theme.spacing.xl,
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
     borderTop: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[2]
     }`,
 
-    [theme.fn.smallerThan('md')]: {
-      flexDirection: 'column',
+    [theme.fn.smallerThan("md")]: {
+      flexDirection: "column",
     },
   },
 
   social: {
-    [theme.fn.smallerThan('md')]: {
+    [theme.fn.smallerThan("md")]: {
       marginTop: theme.spacing.xs,
     },
   },
-}))
+}));
 
 interface FooterLinksProps {
   data: {
-    title: string
-    links: { label: string; link: string }[]
-  }[]
+    title: string;
+    links: { label: string; link: string }[];
+  }[];
 }
 
 export default function Footer({ data }: FooterLinksProps) {
-  const { classes } = useStyles()
+  const { classes } = useStyles();
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
@@ -96,15 +99,15 @@ export default function Footer({ data }: FooterLinksProps) {
       >
         {link.label}
       </Text>
-    ))
+    ));
 
     return (
       <div key={group.title}>
         <Text className={classes.title}>{group.title}</Text>
         {links}
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <footer className="bg-gray-800 py-10">
@@ -122,7 +125,7 @@ export default function Footer({ data }: FooterLinksProps) {
           {groups}
           <div>
             <h1 className={classes.title}>Payments</h1>
-            <p className="text-sm">
+            <p className="text-sm text-gray-300">
               We do not store any payment details on our servers. All payments
               are handled by PayPal.
             </p>
@@ -175,5 +178,5 @@ export default function Footer({ data }: FooterLinksProps) {
         </div>
       </div>
     </footer>
-  )
+  );
 }

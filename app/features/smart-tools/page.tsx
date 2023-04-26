@@ -1,30 +1,30 @@
-import React from 'react'
-import { BiArrowToRight } from 'react-icons/bi'
-import smartTools from '../../../data/smartTools'
+import React from "react";
+import { BiArrowToRight } from "react-icons/bi";
+import smartTools from "../../../data/smartTools";
 
 export const metadata = {
-  title: 'Geleza - Smart Tools',
+  title: "Geleza - Smart Tools",
   description:
     "A.I powered innovative and cutting-edge tools designed to enhance students' academic performance.",
-}
+};
 
 const SmartToolsPage = () => {
   return (
     <div className="py-20 bg-gray-900">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-gray-200  md:text-6xl text-4xl font-black">
-          A.I Powered{' '}
+          A.I Powered{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
             Smart Tools
-          </span>{' '}
+          </span>{" "}
           For Students.
         </h1>
-        <p className="text-center mt-3 text-lg">
+        <p className="text-center mt-3 text-lg text-white">
           Innovative and cutting-edge tools designed to enhance students'
           academic performance.
         </p>
         <a
-          href={'https://classroom.geleza.app'}
+          href={"https://classroom.geleza.app"}
           className="bg-white text-black font-bold mt-6 mb-10 px-20 py-4 rounded-full"
         >
           Go To Class
@@ -58,7 +58,7 @@ const SmartToolsPage = () => {
                       <BiArrowToRight />
                     </a>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -76,24 +76,25 @@ const SmartToolsPage = () => {
                 width=""
                 height=""
               />
-
             </div>
             <div className="md:7/12 lg:w-1/2">
               <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-2xl">
                 Do more with
               </h1>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
-              Smart Docs & Summarizer
+                Smart Docs & Summarizer
               </h2>
               <p className="my-8 text-gray-600 ">
-              Upload and manage your documents and study materials the smart way. Sort and group your documents by folders and types, summarize the context of your documents and more.
+                Upload and manage your documents and study materials the smart
+                way. Sort and group your documents by folders and types,
+                summarize the context of your documents and more.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SmartToolsPage
+export default SmartToolsPage;

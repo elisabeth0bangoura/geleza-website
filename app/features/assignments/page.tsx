@@ -1,29 +1,27 @@
-import React from 'react'
-import { BiArrowToRight } from 'react-icons/bi'
+import React from "react";
+import { BiArrowToRight } from "react-icons/bi";
 
 export const metadata = {
-  title: 'Geleza - Assignments Writer',
+  title: "Geleza - Assignments Writer",
   description:
-    'Stuck on an assignment question? Simply head to Geleza and punch in your assignment questions, provide a more information where necessary, and get all the answers and more information to help you understand the solution.',
-}
+    "Stuck on an assignment question? Simply head to Geleza and punch in your assignment questions, provide a more information where necessary, and get all the answers and more information to help you understand the solution.",
+};
 
 const NotesPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">
-      <h1 className="text-center text-white font-bold mb-2 text-2xl">
-       Introducing...
-      </h1>
+      <h1 className="text-center  font-bold mb-2 text-2xl">Introducing...</h1>
       <div className="mb-3.5 flex items-center justify-center">
         <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
       </div>
       <div className="flex flex-col justify-center items-center w-full mx-auto max-w-4xl">
-        <h1 className="text-center text-gray-200 md:text-6xl text-3xl font-black">
-          The Best{' '}
+        <h1 className="text-center text-gray-700 md:text-6xl text-3xl font-black">
+          The Best{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
             Assignment
-          </span>{' '}
+          </span>{" "}
           Writer.
         </h1>
       </div>
@@ -42,7 +40,10 @@ const NotesPage = () => {
                 do assignments like a pro!
               </h2>
               <p className="my-8 text-gray-600 ">
-               Stuck on an assignment question? Simply head to Geleza and punch in your assignment questions, provide a more information where necessary, and get all the answers and more information to help you understand the solution.
+                Stuck on an assignment question? Simply head to Geleza and punch
+                in your assignment questions, provide a more information where
+                necessary, and get all the answers and more information to help
+                you understand the solution.
               </p>
               <a
                 href={"https://classroom.geleza.app"}
@@ -56,7 +57,7 @@ const NotesPage = () => {
       </div>
 
       <div className="relative py-20">
-        <h1 className="mb-10 font-bold capitalize text-4xl text-white text-center">
+        <h1 className="mb-10 font-bold capitalize text-4xl text-center">
           How Assignment Writer Can Help You.
         </h1>
         <div className="container relative m-auto px-3 text-gray-500 md:px-12">
@@ -72,7 +73,9 @@ const NotesPage = () => {
                 Any Question, Any Course/Subject.
               </h3>
               <p>
-                Assignment writer can answer any academic related question. Our AI is trained to understand and respond to all question, regardless of the course or subjects you are doing.
+                Assignment writer can answer any academic related question. Our
+                AI is trained to understand and respond to all question,
+                regardless of the course or subjects you are doing.
               </p>
               <a
                 href={"https://classroom.geleza.app"}
@@ -92,7 +95,9 @@ const NotesPage = () => {
                 Learn From Assignment Answers.
               </h3>
               <p>
-                Let the AI give you a complete answer to your question. Additionally, you will be provided with a more descriptive summary of the answer to help you learn more.
+                Let the AI give you a complete answer to your question.
+                Additionally, you will be provided with a more descriptive
+                summary of the answer to help you learn more.
               </p>
 
               <a
@@ -113,7 +118,10 @@ const NotesPage = () => {
                 Any Type Of Question.
               </h3>
               <p>
-               You can ask any type of question, from simple direct questions, true or false questions, as well as multiple choice questions. The AI will be able to understand the structure of your question and answer accordingly.
+                You can ask any type of question, from simple direct questions,
+                true or false questions, as well as multiple choice questions.
+                The AI will be able to understand the structure of your question
+                and answer accordingly.
               </p>
               <a
                 href={"https://classroom.geleza.app"}
@@ -126,7 +134,7 @@ const NotesPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NotesPage
+export default NotesPage;

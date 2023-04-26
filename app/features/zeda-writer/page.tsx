@@ -1,29 +1,27 @@
-import React from 'react'
-import { BiArrowToRight } from 'react-icons/bi'
+import React from "react";
+import { BiArrowToRight } from "react-icons/bi";
 
 export const metadata = {
-  title: 'Geleza - Zeda Writer',
+  title: "Geleza - Zeda Writer",
   description:
-    'The only content writer tool you need. Transform your writing experience with Zeda Writer, the A.I tool that effortlessly generates essays, letters, reports, and more.',
-}
+    "The only content writer tool you need. Transform your writing experience with Zeda Writer, the A.I tool that effortlessly generates essays, letters, reports, and more.",
+};
 
 const ZedaWriterPage = () => {
   return (
     <div className="!text-gray-800 px-5 pt-20">
-      <h1 className="text-center text-white font-bold mb-2 text-2xl">
-        Zeda Writer
-      </h1>
+      <h1 className="text-center font-bold mb-2 text-2xl">Zeda Writer</h1>
       <div className="mb-8 flex items-center justify-center">
         <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
       </div>
       <div className="flex flex-col justify-center items-center w-full mx-auto max-w-4xl">
-        <h1 className="text-center text-gray-200 md:text-6xl text-3xl font-black">
-          The Only{' '}
+        <h1 className="text-center text-gray-700 md:text-6xl text-3xl font-black">
+          The Only{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
             Content Writer
-          </span>{' '}
+          </span>{" "}
           Tool You Need.
         </h1>
       </div>
@@ -62,7 +60,7 @@ const ZedaWriterPage = () => {
       </div>
 
       <div className="relative py-20">
-        <h1 className="mb-10 font-bold text-4xl text-white text-center">
+        <h1 className="mb-10 font-bold text-4xl text-center">
           How to use Zeda Writer
         </h1>
         <div className="container relative m-auto px-6 text-gray-500 md:px-12">
@@ -115,7 +113,8 @@ const ZedaWriterPage = () => {
               />
               <h3 className="text-2xl font-bold text-gray-800">Step 3</h3>
               <p>
-                Generate your writing with the specified title, tone, and number of words. You can save your writing as a PDF to read later.
+                Generate your writing with the specified title, tone, and number
+                of words. You can save your writing as a PDF to read later.
               </p>
               <a
                 href={"https://classroom.geleza.app"}
@@ -128,7 +127,7 @@ const ZedaWriterPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ZedaWriterPage
+export default ZedaWriterPage;

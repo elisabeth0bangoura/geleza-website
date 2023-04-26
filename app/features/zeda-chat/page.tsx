@@ -1,11 +1,11 @@
-import React from 'react'
-import { BiArrowToRight } from 'react-icons/bi'
+import React from "react";
+import { BiArrowToRight } from "react-icons/bi";
 
 export const metadata = {
-  title: 'Geleza - Zeda Chat',
+  title: "Geleza - Zeda Chat",
   description:
-    'Meet the ChatGPT Alternative, But With Superpowers. Zeda Chat is an advanced conversational AI chatbot that has been designed with the inclusion of built-in personalities.',
-}
+    "Meet the ChatGPT Alternative, But With Superpowers. Zeda Chat is an advanced conversational AI chatbot that has been designed with the inclusion of built-in personalities.",
+};
 
 const ZedaChatPage = () => {
   return (
@@ -19,14 +19,14 @@ const ZedaChatPage = () => {
         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
       </div>
       <div className="flex flex-col justify-center items-center w-full mx-auto max-w-4xl">
-        <h1 className="text-center text-gray-200 md:text-5xl  text-3xl font-black">
-          Meet the{' '}
+        <h1 className="text-center text-gray-700 md:text-5xl  text-3xl font-black">
+          Meet the{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
             ChatGPT
-          </span>{' '}
+          </span>{" "}
           Alternative, <br /> But With Superpowers.
         </h1>
-        <p className="text-center text-gray-400 mt-5 text-xl">
+        <p className="text-center text-gray-900 mt-5 text-xl">
           Zeda Chat is an advanced conversational AI chatbot that has been
           designed with the inclusion of built-in personalities.
         </p>
@@ -36,7 +36,6 @@ const ZedaChatPage = () => {
         >
           Start Chatting Now
         </a>
-        e
       </div>
 
       <div className="relative py-20">
@@ -96,7 +95,8 @@ const ZedaChatPage = () => {
                 Copy Responses.
               </h3>
               <p>
-                You can copy responses with ease, share with classmates or paste them under notes, to read later.
+                You can copy responses with ease, share with classmates or paste
+                them under notes, to read later.
               </p>
               <a
                 href={"https://classroom.geleza.app"}
@@ -138,7 +138,7 @@ const ZedaChatPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ZedaChatPage
+export default ZedaChatPage;

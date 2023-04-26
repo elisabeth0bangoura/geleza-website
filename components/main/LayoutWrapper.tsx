@@ -1,41 +1,41 @@
-'use client'
+"use client";
 
-import 'react-toastify/dist/ReactToastify.css'
-import { CacheProvider } from '@emotion/react'
-import { useEmotionCache, MantineProvider } from '@mantine/core'
-import { useServerInsertedHTML } from 'next/navigation'
-import { ToastContainer } from 'react-toastify'
-import { useEffect, useState } from 'react'
+import "react-toastify/dist/ReactToastify.css";
+import { CacheProvider } from "@emotion/react";
+import { useEmotionCache, MantineProvider } from "@mantine/core";
+import { useServerInsertedHTML } from "next/navigation";
+import { ToastContainer } from "react-toastify";
+import { useEffect, useState } from "react";
 
 export default function LayoutWrapper({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const cache = useEmotionCache()
-  cache.compat = true
+  const cache = useEmotionCache();
+  cache.compat = true;
 
   useServerInsertedHTML(() => (
     <style
-      data-emotion={`${cache.key} ${Object.keys(cache.inserted).join(' ')}`}
+      data-emotion={`${cache.key} ${Object.keys(cache.inserted).join(" ")}`}
       dangerouslySetInnerHTML={{
-        __html: Object.values(cache.inserted).join(' '),
+        __html: Object.values(cache.inserted).join(" "),
       }}
     />
-  ))
+  ));
 
-  const [showing, setShowing] = useState(false)
+  const [showing, setShowing] = useState(false);
 
   useEffect(() => {
-    setShowing(true)
-  }, [])
+    setShowing(true);
+  }, []);
 
   if (!showing) {
-    return null
+    return null;
   }
 
-  if (typeof window === 'undefined') {
-    return <></>
+  if (typeof window === "undefined") {
+    return <></>;
   }
 
   return (
@@ -45,7 +45,7 @@ export default function LayoutWrapper({
         withNormalizeCSS
         withCSSVariables
         theme={{
-          colorScheme: 'dark',
+          colorScheme: "light",
         }}
       >
         <ToastContainer
@@ -58,5 +58,5 @@ export default function LayoutWrapper({
         {children}
       </MantineProvider>
     </CacheProvider>
-  )
+  );
 }

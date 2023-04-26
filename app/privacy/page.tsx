@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export const metadata = {
-  title: 'Geleza - Privacy Policy',
+  title: "Geleza - Privacy Policy",
   description:
-    'Before proceeding or creating an account, please read our privacy policy.',
-}
+    "Before proceeding or creating an account, please read our privacy policy.",
+};
 
 const PrivacyPage = () => {
   return (
-    <div className="px-5 w-full prose-a:text-white prose-strong:text-white mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">
+    <div className="px-5 w-full prose-a:text-dark prose-strong:text-dark mx-auto max-w-7xl py-20 prose prose-lg !text-dark prose-headings:text-dark">
       <h1>Privacy Policy</h1>
       <p>Last updated: January 29, 2023</p>
       <p>
@@ -21,7 +21,6 @@ const PrivacyPage = () => {
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
         accordance with this Privacy Policy.
-        
       </p>
       <h1>Interpretation and Definitions</h1>
       <h2>Interpretation</h2>
@@ -105,7 +104,7 @@ const PrivacyPage = () => {
         </li>
         <li>
           <p>
-            <strong>Website</strong> refers to Geleza, accessible from{' '}
+            <strong>Website</strong> refers to Geleza, accessible from{" "}
             <a
               href="https://geleza.app"
               rel="external nofollow noopener"
@@ -198,7 +197,7 @@ const PrivacyPage = () => {
         Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
         Persistent Cookies remain on Your personal computer or mobile device
         when You go offline, while Session Cookies are deleted as soon as You
-        close Your web browser. 
+        close Your web browser.
       </p>
       <p>
         We use both Session and Persistent Cookies for the purposes set out
@@ -503,7 +502,7 @@ const PrivacyPage = () => {
         <li>By email: support@geleza.app</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default PrivacyPage
+export default PrivacyPage;

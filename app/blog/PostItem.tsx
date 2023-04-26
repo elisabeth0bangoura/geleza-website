@@ -1,26 +1,26 @@
-'use client'
-import Link from 'next/link'
-import React from 'react'
-import { createStyles, Paper, Text, Title, Button } from '@mantine/core'
+"use client";
+import Link from "next/link";
+import React from "react";
+import { createStyles, Paper, Text, Title, Button } from "@mantine/core";
 
 type Props = {
-  id: string
-  title: string
-  image: string
-  date: string
-}
+  id: string;
+  title: string;
+  image: string;
+  date: string;
+};
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: 440,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
-    backgroundBlendMode: 'overlay',
+    height: 400,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundBlendMode: "overlay",
   },
 
   title: {
@@ -36,24 +36,24 @@ const useStyles = createStyles((theme) => ({
     color: theme.white,
     opacity: 0.7,
     fontWeight: 700,
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
   },
-}))
+}));
 
 interface ArticleCardImageProps {
-  image: string
-  title: string
-  category: string
-  id: string
+  image: string;
+  title: string;
+  category: string;
+  id: string;
 }
 
 const PostItem = ({ image, title, category, id }: ArticleCardImageProps) => {
-  const { classes } = useStyles()
+  const { classes } = useStyles();
 
   return (
     <Paper
       shadow="md"
-      p="xl"
+      p="lg"
       radius="md"
       sx={{ backgroundImage: `url(${image})` }}
       className={classes.card}
@@ -61,10 +61,10 @@ const PostItem = ({ image, title, category, id }: ArticleCardImageProps) => {
       href={`/blog/${id}`}
     >
       <div>
-        <Text className={classes.category} size="xs">
+        <Text className={classes.category} size="xs" lineClamp={1}>
           {category}
         </Text>
-        <Title order={3} className={classes.title}>
+        <Title order={3} className={classes.title} lineClamp={3}>
           {title}
         </Title>
       </div>
@@ -72,7 +72,7 @@ const PostItem = ({ image, title, category, id }: ArticleCardImageProps) => {
         Read article
       </Button>
     </Paper>
-  )
-}
+  );
+};
 
-export default PostItem
+export default PostItem;

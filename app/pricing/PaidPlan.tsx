@@ -1,10 +1,10 @@
-'use client'
-import { Button, Card } from '@mantine/core'
-import React from 'react'
+"use client";
+import { Button, Card } from "@mantine/core";
+import React from "react";
 
 const PaidPlan = () => {
   return (
-    <Card className="bg-gray-800 py-5 px-10">
+    <Card className="bg-gray-800 py-5 px-10 text-white">
       <div className="flex items-center gap-3">
         <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
@@ -12,10 +12,10 @@ const PaidPlan = () => {
           <p className="mt-1 font-light">🎉 Get 50% off! Until June 🎉</p>
         </div>
       </div>
-     
+
       <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
         <h1 className="text-5xl font-black text-primary">
-          <span className='line-through text-red-500 text-3xl'>$15</span>{" "}$7.50
+          <span className="line-through text-red-500 text-3xl">$15</span> $7.50
         </h1>
         <p>/ Per Month</p>
       </div>
@@ -45,7 +45,7 @@ const PaidPlan = () => {
         Get Started
       </Button>
     </Card>
-  )
-}
+  );
+};
 
-export default PaidPlan
+export default PaidPlan;

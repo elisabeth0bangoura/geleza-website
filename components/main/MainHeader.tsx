@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import {
   createStyles,
   Header,
@@ -16,8 +16,8 @@ import {
   Drawer,
   Collapse,
   ScrollArea,
-} from '@mantine/core'
-import { useDisclosure } from '@mantine/hooks'
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import {
   IconBook,
   IconChevronDown,
@@ -27,141 +27,116 @@ import {
   IconChartBubble,
   IconEdit,
   IconBook2,
-} from '@tabler/icons-react'
-import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
-import { useEffect } from 'react'
+} from "@tabler/icons-react";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const useStyles = createStyles((theme) => ({
   link: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     height: 50,
     paddingLeft: theme.spacing.md,
     paddingRight: theme.spacing.md,
-    textDecoration: 'none',
+    textDecoration: "none",
     color: theme.white,
     fontWeight: 500,
     fontSize: theme.fontSizes.sm,
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       height: 50,
-      display: 'flex',
-      alignItems: 'center',
-      width: '100%',
+      display: "flex",
+      alignItems: "center",
+      width: "100%",
     },
 
     ...theme.fn.hover({
-      backgroundColor:
-        theme.colorScheme === 'dark'
-          ? theme.colors.dark[5]
-          : theme.colors.gray[0],
+      backgroundColor: theme.colors.dark[5],
     }),
   },
 
   subLink: {
-    width: '100%',
+    width: "100%",
     padding: `${theme.spacing.xs} ${theme.spacing.md}`,
     borderRadius: theme.radius.md,
 
     ...theme.fn.hover({
-      backgroundColor:
-        theme.colorScheme === 'dark'
-          ? theme.colors.dark[7]
-          : theme.colors.gray[0],
+      backgroundColor: theme.colors.dark[7],
     }),
 
-    '&:active': theme.activeStyles,
+    "&:active": theme.activeStyles,
   },
 
   dropdownFooter: {
-    backgroundColor:
-      theme.colorScheme === 'dark'
-        ? theme.colors.dark[7]
-        : theme.colors.gray[0],
+    backgroundColor: theme.colors.dark[7],
     margin: `calc(${theme.spacing.md} * -1)`,
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
     paddingBottom: theme.spacing.xl,
-    borderTop: `16px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-    }`,
   },
 
   hiddenMobile: {
-    [theme.fn.smallerThan('md')]: {
-      display: 'none',
+    [theme.fn.smallerThan("md")]: {
+      display: "none",
     },
   },
 
   hiddenDesktop: {
-    [theme.fn.largerThan('md')]: {
-      display: 'none',
+    [theme.fn.largerThan("md")]: {
+      display: "none",
     },
   },
-}))
+}));
 
 const features = [
-  // {
-  //   icon: IconVideo,
-  //   title: 'A.I Powered Lessons',
-  //   description:
-  //     'Choose a course or subject, a chapter and let Geleza AI teach you everything.',
-  //   link: '/lessons',
-  // },
   {
     icon: IconBook,
-    title: 'PrepPal - Exam Tools',
-    description: 'PrepPal is our A.I tool that helps you prepare for exams.',
-    link: '/preppal',
+    title: "PrepPal - Exam Tools",
+    description: "PrepPal is our A.I tool that helps you prepare for exams.",
+    link: "/preppal",
   },
   {
     icon: IconMessage,
-    title: 'Zeda Chat',
-    description: 'ChatGPT-like Chat, but with superpowers and personalities.',
-    link: '/zeda-chat',
+    title: "Zeda Chat",
+    description: "ChatGPT-like Chat, but with superpowers and personalities.",
+    link: "/zeda-chat",
   },
   {
     icon: IconWriting,
-    title: 'Zeda Writer',
-    description: 'Essay, Letters & Reports writer powered by A.I. ',
-    link: '/zeda-writer',
+    title: "Zeda Writer",
+    description: "Essay, Letters & Reports writer powered by A.I. ",
+    link: "/zeda-writer",
   },
-  
+
   {
     icon: IconEdit,
-    title: 'Assignment Writer',
-    description: 'Write your assignments with the help of Geleza AI',
-    link: '/assignments',
+    title: "Assignment Writer",
+    description: "Write your assignments with the help of Geleza AI",
+    link: "/assignments",
   },
   {
     icon: IconBook2,
-    title: 'The Library',
-    description: 'Find anything to read from facts, articles, etc.',
-    link: '/library',
+    title: "The Library",
+    description: "Find anything to read from facts, articles, etc.",
+    link: "/library",
   },
   {
     icon: IconChartBubble,
-    title: 'Smart Tools',
-    description:
-      'Task Manager, Documents Manager, Study Notes, and more.',
-    link: '/smart-tools',
+    title: "Smart Tools",
+    description: "Task Manager, Documents Manager, Study Notes, and more.",
+    link: "/smart-tools",
   },
-]
+];
 
 export function MainHeader() {
-  const [
-    drawerOpened,
-    { toggle: toggleDrawer, close: closeDrawer },
-  ] = useDisclosure(false)
+  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
+    useDisclosure(false);
 
-  const [
-    linksOpened,
-    { toggle: toggleLinks, close: closeLinks },
-  ] = useDisclosure(false)
+  const [linksOpened, { toggle: toggleLinks, close: closeLinks }] =
+    useDisclosure(false);
 
-  const { classes, theme } = useStyles()
-  const router = useRouter()
+  const { classes, theme } = useStyles();
 
   const links = features.map((item) => (
     <UnstyledButton
@@ -175,7 +150,7 @@ export function MainHeader() {
           <item.icon size={20} color={theme.fn.primaryColor()} />
         </ThemeIcon>
         <div>
-          <Text size="sm" fw={500}>
+          <Text size="sm" fw={500} color={theme.white}>
             {item.title}
           </Text>
           <Text size="xs" color="dimmed">
@@ -184,15 +159,15 @@ export function MainHeader() {
         </div>
       </Group>
     </UnstyledButton>
-  ))
+  ));
 
-  const path = usePathname()
+  const path = usePathname();
 
   useEffect(() => {
-    closeDrawer()
-    closeLinks()
-    window.scrollTo(0, 0)
-  }, [path])
+    closeDrawer();
+    closeLinks();
+    window.scrollTo(0, 0);
+  }, [path]);
 
   return (
     <Box>
@@ -200,14 +175,14 @@ export function MainHeader() {
         <Group
           className="mx-auto max-w-7xl w-full"
           position="apart"
-          sx={{ height: '100%' }}
+          sx={{ height: "100%" }}
         >
           <Link href="/">
             <img src="/logo.png" className="h-12" />
           </Link>
 
           <Group
-            sx={{ height: '100%' }}
+            sx={{ height: "100%" }}
             spacing={0}
             className={classes.hiddenMobile}
           >
@@ -235,16 +210,17 @@ export function MainHeader() {
                 </a>
               </HoverCard.Target>
 
-              <HoverCard.Dropdown sx={{ overflow: 'hidden' }}>
+              <HoverCard.Dropdown
+                className="bg-dark border-dark"
+                sx={{ overflow: "hidden" }}
+              >
                 <Group position="apart" px="md">
-                  <Text fw={500}>Features</Text>
+                  <Text fw={500} color={theme.white}>
+                    Features
+                  </Text>
                 </Group>
 
-                <Divider
-                  my="sm"
-                  mx="-md"
-                  color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'}
-                />
+                <Divider my="sm" mx="-md" color={"dark.5"} />
 
                 <SimpleGrid cols={2} spacing={0}>
                   {links}
@@ -253,7 +229,7 @@ export function MainHeader() {
                 <div className={classes.dropdownFooter}>
                   <Group position="apart">
                     <div>
-                      <Text fw={500} fz="sm">
+                      <Text fw={500} fz="sm" color={theme.white}>
                         Get started
                       </Text>
                       <Text size="xs" color="dimmed">
@@ -262,9 +238,10 @@ export function MainHeader() {
                       </Text>
                     </div>
                     <Button
-                      component={'a'}
+                      component={"a"}
                       href="https://classroom.geleza.app"
                       variant="default"
+                      className="bg-white"
                       target="_blank"
                     >
                       Get started
@@ -276,7 +253,7 @@ export function MainHeader() {
 
             <Link href="/features/assignments" className={classes.link}>
               <h1 className="flex items-center gap-3">
-                Assignment Writer{' '}
+                Assignment Writer{" "}
                 <span className="bg-gradient-to-tr from-orange-600 to-yellow-600 px-2 rounded-full">
                   New 🌟
                 </span>
@@ -297,6 +274,7 @@ export function MainHeader() {
               href="https://classroom.geleza.app"
               variant="default"
               size="md"
+              className="bg-white"
             >
               Log in
             </Button>
@@ -314,6 +292,10 @@ export function MainHeader() {
             opened={drawerOpened}
             onClick={toggleDrawer}
             className={classes.hiddenDesktop}
+            style={{
+              color: "white",
+              backgroundColor: "white",
+            }}
           />
         </Group>
       </Header>
@@ -326,11 +308,25 @@ export function MainHeader() {
         title="Menu"
         className={classes.hiddenDesktop}
         zIndex={1000000}
+        style={{
+          backgroundColor: "black",
+        }}
+        styles={{
+          header: {
+            backgroundColor: "#1F2937",
+          },
+          title: {
+            color: "white",
+          },
+          content: {
+            backgroundColor: "#1F2937",
+          },
+        }}
       >
-        <ScrollArea mx="-md">
+        <ScrollArea mx="-md" className="bg-dark">
           <Divider
             my="sm"
-            color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'}
+            color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
           />
 
           <Link href="/" className={classes.link}>
@@ -349,7 +345,7 @@ export function MainHeader() {
           </Collapse>
           <Link href="/features/zeda-chat" className={classes.link}>
             <h1 className="flex items-center gap-3">
-              Zeda Chat{' '}
+              Zeda Chat{" "}
               <span className="bg-gradient-to-tr from-orange-600 to-yellow-600 px-2 rounded-full">
                 New 🌟
               </span>
@@ -365,7 +361,7 @@ export function MainHeader() {
 
           <Divider
             my="sm"
-            color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'}
+            color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
           />
 
           <Group position="center" grow pb="xl" px="md">
@@ -374,6 +370,7 @@ export function MainHeader() {
               href="https://classroom.geleza.app"
               variant="default"
               size="md"
+              className="bg-white"
             >
               Log in
             </Button>
@@ -389,5 +386,5 @@ export function MainHeader() {
         </ScrollArea>
       </Drawer>
     </Box>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export const metadata = {
-  title: 'Geleza - Terms & Conditions',
+  title: "Geleza - Terms & Conditions",
   description:
-    'Before proceeding or creating an account, please read our terms and conditions.',
-}
+    "Before proceeding or creating an account, please read our terms and conditions.",
+};
 
 const TermsPage = () => {
   return (
-    <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-white prose-headings:text-white">
+    <div className="px-5 w-full mx-auto max-w-7xl py-20 prose prose-lg !text-dark prose-headings:text-dark">
       <h2>
         <strong>Terms and Conditions</strong>
       </h2>
@@ -49,7 +49,7 @@ const TermsPage = () => {
 
       <p>
         We employ the use of cookies. By accessing geleza.app, you agreed to use
-        cookies in agreement with the Reavize's Privacy Policy.{' '}
+        cookies in agreement with the Reavize's Privacy Policy.{" "}
       </p>
 
       <p>
@@ -319,7 +319,7 @@ const TermsPage = () => {
         damage of any nature.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default TermsPage
+export default TermsPage;

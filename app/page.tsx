@@ -5,7 +5,7 @@ import Marketing from "../components/homepage/Marketing";
 import WhatYouGet from "../components/homepage/WhatYouGet";
 
 export const metadata = {
-  title: "Geleza - Home",
+  title: "Geleza - All in one AI platform",
   description:
     "Geleza is the ultimate all-in-one platform for students, professionals, and businesses, offering AI-powered tools that help you work smarter and faster. With features like automated text summarization, content generation, and advanced chat, Geleza empowers creators to optimize their workflow and unlock their full potential. Join us today and experience the future of work!",
 };

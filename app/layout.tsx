@@ -7,9 +7,9 @@ import footerData from "../data/footer";
 import { CallToAction } from "../components/public/CallToAction";
 
 export const metadata = {
-  title: "Geleza - Home",
+  title: "Geleza - All in one AI platform",
   description:
-    "Revolutionizing High School Education with AI Technology: Experience it Now!",
+    "Discover Geleza, the AI platform that revolutionizes the way you work. Boost your productivity and transform your business with our suite of powerful AI tools.",
 };
 
 const font = Noto_Sans({

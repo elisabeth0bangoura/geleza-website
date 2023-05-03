@@ -3,7 +3,7 @@ import React from "react";
 export const metadata = {
   title: "Geleza - Terms & Conditions",
   description:
-    "Before proceeding or creating an account, please read our terms and conditions.",
+    "By using Geleza, you agree to our terms and conditions. Please review them carefully to understand your rights and obligations as a user.",
 };
 
 const TermsPage = () => {

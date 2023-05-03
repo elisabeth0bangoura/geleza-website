@@ -6,10 +6,9 @@ const PaidPlan = () => {
   return (
     <Card className="bg-gray-800 py-5 px-10 text-white">
       <div className="flex items-center gap-3">
-        <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
           <h6 className="font-bold text-2xl text-white">Special Offer</h6>
-          <p className="mt-1 font-light">🎉 Get 50% off! Until June 🎉</p>
+          <p className="mt-1 font-light">🎉 Get 50% off! Until 15 May 🎉</p>
         </div>
       </div>
 
@@ -22,18 +21,11 @@ const PaidPlan = () => {
 
       <div className="mb-5">
         <h6 className="mb-5 text-white text-xl font-medium">
-          This plan includes
+          Full Access Plan
         </h6>
 
-        <h1 className="mb-2 text-sm">🌟 Performance & Stats Dashboard</h1>
-        <h1 className="mb-2 text-sm">🌟 Zeda AI Chat</h1>
-        <h1 className="mb-2 text-sm">🌟 Content & Essay Writer</h1>
-        <h1 className="mb-2 text-sm">🌟 Assignment Writer</h1>
-        <h1 className="mb-2 text-sm">🌟 PrepPal - Exam Tool</h1>
-        <h1 className="mb-2 text-sm">🌟 The Library</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Files & Folders</h1>
-        <h1 className="mb-2 text-sm">🌟 Unlimited Notes</h1>
-        <h1 className="mb-2 text-sm">🌟 All Upcoming Features</h1>
+        <h1 className="mb-2 text-sm">🌟 Gain access to all AI tools</h1>
+        <h1 className="mb-2 text-sm">🌟 No monthly usage limits</h1>
       </div>
 
       <Button

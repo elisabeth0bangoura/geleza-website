@@ -3,7 +3,7 @@ import React from "react";
 export const metadata = {
   title: "Geleza - Privacy Policy",
   description:
-    "Before proceeding or creating an account, please read our privacy policy.",
+    "At Geleza, we take your privacy seriously. Read our policy to understand how we collect, use, and protect your personal information.",
 };
 
 const PrivacyPage = () => {

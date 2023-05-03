@@ -5,7 +5,7 @@ import PaidPlan from "./PaidPlan";
 export const metadata = {
   title: "Geleza - Pricing Plans",
   description:
-    "Affordable pricing to achieve academic success! Enroll now and discover why Geleza is the best investment you'll ever make in yourself.",
+    "Discover our pricing plans and choose the one that fits your needs. Geleza offers a flexible and affordable solution for all types of users.",
 };
 
 const PricingPage = () => {
@@ -17,7 +17,7 @@ const PricingPage = () => {
           <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
           <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
         </div>
-        <h1 className="text-3xl md:text-4xl text-white font-black text-center">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-black text-center">
           Get Started <br /> With{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600">
             Geleza{" "}

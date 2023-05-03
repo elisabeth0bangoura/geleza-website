@@ -6,7 +6,6 @@ const FreePlan = () => {
   return (
     <Card className="bg-gray-800 py-5 px-10 text-white">
       <div className="flex items-center gap-3">
-        <img src="/svg/pencil.svg" className="h-14 w-14" />
         <div>
           <h6 className="font-bold text-2xl text-white">Free Plan</h6>
           <p className="mt-1 font-light text-white">Perfect to get started.</p>
@@ -21,23 +20,12 @@ const FreePlan = () => {
       </div>
 
       <div className="mb-5">
-        <h6 className="mb-5 text-white text-xl font-medium">
-          This plan includes
-        </h6>
+        <h6 className="mb-5 text-white text-xl font-medium">Free Tools Only</h6>
 
         <h1 className="mb-2 text-sm text-white">
-          🌟 Performance & Stats Dashboard
+          🌟 Only access free AI tools
         </h1>
-        <h1 className="mb-2 text-sm text-white">
-          🌟 Unlimited Files & Folders
-        </h1>
-        <h1 className="mb-2 text-sm text-white">🌟 Unlimited Notes</h1>
-        <h1 className="mb-2 text-sm text-white">❌ Zeda AI Chat</h1>
-        <h1 className="mb-2 text-sm text-white">❌ Content & Essay Writer</h1>
-        <h1 className="mb-2 text-sm text-white">❌ Assignment Writer</h1>
-        <h1 className="mb-2 text-sm text-white">❌ PrepPal - Exam Tool</h1>
-        <h1 className="mb-2 text-sm text-white">❌ The Library</h1>
-        <h1 className="mb-2 text-sm text-white">❌ All Upcoming Features</h1>
+        <h1 className="mb-2 text-sm text-white">🌟 No monthly usage limits</h1>
       </div>
 
       <Button

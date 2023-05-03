@@ -122,7 +122,7 @@ const HelpForm = () => {
             <br />
             <a
               className="btn shadow-none bg-white border-2 border-gray-800 rounded-xl text-gray-900"
-              href="https://classroom.geleza.app/dashboard"
+              href="https://platform.geleza.app/dashboard"
               target="_blank"
             >
               Go to class

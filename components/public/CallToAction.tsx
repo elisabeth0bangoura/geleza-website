@@ -2,92 +2,11 @@
 
 import { createStyles, Title, Text, Button, Container } from "@mantine/core";
 import Link from "next/link";
+import catStyles from "../../styles/catStyles";
 import Dots from "../ui/Dots";
 
-const useStyles = createStyles((theme) => ({
-  wrapper: {
-    position: "relative",
-    paddingTop: 120,
-    paddingBottom: 80,
-
-    [theme.fn.smallerThan("sm")]: {
-      paddingTop: 80,
-      paddingBottom: 60,
-    },
-  },
-
-  inner: {
-    position: "relative",
-    zIndex: 1,
-  },
-
-  dots: {
-    position: "absolute",
-    color: theme.colors.gray[6],
-
-    [theme.fn.smallerThan("sm")]: {
-      display: "none",
-    },
-  },
-
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
-
-  title: {
-    textAlign: "center",
-    fontWeight: 800,
-    fontSize: 40,
-    letterSpacing: -1,
-    color: theme.white,
-    marginBottom: theme.spacing.xs,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-
-    [theme.fn.smallerThan("xs")]: {
-      fontSize: 28,
-      textAlign: "left",
-    },
-  },
-
-  description: {
-    textAlign: "center",
-
-    [theme.fn.smallerThan("xs")]: {
-      textAlign: "left",
-      fontSize: theme.fontSizes.md,
-    },
-  },
-
-  controls: {
-    marginTop: theme.spacing.lg,
-    display: "flex",
-    justifyContent: "center",
-
-    [theme.fn.smallerThan("xs")]: {
-      flexDirection: "column",
-    },
-  },
-
-  control: {
-    "&:not(:first-of-type)": {
-      marginLeft: theme.spacing.md,
-    },
-
-    [theme.fn.smallerThan("xs")]: {
-      height: 42,
-      fontSize: theme.fontSizes.md,
-
-      "&:not(:first-of-type)": {
-        marginTop: theme.spacing.md,
-        marginLeft: 0,
-      },
-    },
-  },
-}));
-
 export function CallToAction() {
-  const { classes } = useStyles();
+  const { classes } = catStyles();
 
   return (
     <div className="bg-gradient-to-br from-gray-800 via-slate-900 to-blue-900">
@@ -99,7 +18,7 @@ export function CallToAction() {
 
         <div className={classes.inner}>
           <Title className={classes.title}>
-            Revolutionize Your Learning <br /> with{" "}
+            Smart AI Tools For <br />
             <Text
               component="span"
               className={
@@ -107,23 +26,23 @@ export function CallToAction() {
               }
               inherit
             >
-              A.I-Driven
+              Smarter People,
             </Text>{" "}
-            Platform!
+            In One Place.
           </Title>
 
           <Container p={0} size={600}>
             <Text size="lg" color="dimmed" className={classes.description}>
-              Enroll now and discover why Geleza is the best investment you'll
-              ever make in yourself. Get ready to ace your exams, impress your
-              teachers, and achieve your dreams.
+              Ready to experience the power of Geleza? Join us today and start
+              transforming the way you work, learn, and innovate. Sign up now
+              and discover the endless possibilities of AI.
             </Text>
           </Container>
 
           <div className={classes.controls}>
             <Button
               component={"a"}
-              href="https://classroom.geleza.app"
+              href="https://platform.geleza.app"
               className="bg-primary px-10"
               size="lg"
             >

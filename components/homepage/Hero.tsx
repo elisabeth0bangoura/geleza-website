@@ -1,50 +1,46 @@
-'use client'
-import { Badge } from '@mantine/core'
-import React from 'react'
-
+"use client";
+import { Badge } from "@mantine/core";
+import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-tr from-gray-800 via-blue-900 to-gray-900">
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 mx-auto max-w-7xl py-20">
+    <div>
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 mx-auto max-w-7xl py-10">
         <div>
-          <Badge size="xl" color="orange" className="bg-teal-500 text-white capitalize">
-            High School & College Students
+          <Badge className="capitalize" size="xl">
+            All AI tools in one place.
           </Badge>
-          <br />
-          <h1
-            className="text-4xl md:text-6xl font-black mb-7 mt-6 text-white"
-          >
-            
+          <h1 className="text-4xl md:text-6xl lg:text-7xl capitalize font-black mb-7 mt-6 ">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
-             #1 A.I Powered
-            </span>{' '}
-            Students Tools{' '}
+              The only
+            </span>{" "}
+            <span className="stroke">AI Platform</span>{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
-              & Assignment Writer
+              You will ever need
             </span>
             !
           </h1>
-          <p className="mb-14 font-light text-lg text-white">
-            Write assignments, study & prepare for exams with the help of Geleza AI. Built for high school and college students.
+          <p className="mb-14 font-light text-lg ">
+            Tired of too many AI platforms? Us Too! Find all the tools in one
+            place. Revolutionize your work with AI. Join us and start innovating
+            today.
           </p>
           <div>
             <a
-              href={'https://classroom.geleza.app'}
+              href={"https://platform.geleza.app"}
               target="_blank"
-              className="btn border-2 rounded-full bg-white px-24 border-white  text-dark text-lg font-bold"
+              className="btn border-2 rounded-full bg-black px-24 border-black  text-white text-lg font-bold"
             >
-             Start For Free 🎉
+              Start For Free 🎉
             </a>
           </div>
-         
         </div>
         <div>
-          <img src="/cover.png" className="h-full w-full object-contain" />
+          <img src="/images/work.jpg" className="w-full object-contain" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

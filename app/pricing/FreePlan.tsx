@@ -42,7 +42,7 @@ const FreePlan = () => {
 
       <Button
         component="a"
-        href="https://classroom.geleza.app"
+        href="https://platform.geleza.app"
         size="lg"
         className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
       >

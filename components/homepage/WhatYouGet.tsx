@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const WhatYouGet = () => {
   return (
@@ -16,15 +16,17 @@ const WhatYouGet = () => {
               />
             </div>
             <div className="md:7/12 lg:w-1/2">
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-2xl">
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600 font-black text-xl">
                 Wondering...
               </h1>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900">
                 How Geleza works?
               </h2>
-              <p className="my-8 text-gray-600 ">
-                Geleza offers a portal for students manage their learning, write essays, letters & more, practice exams, do their homeworks
-                & assignments and a lot more.
+              <p className="my-8 text-gray-600 font-light">
+                Geleza offers a set of AI tools and features to help you save
+                your time and money. Instead of using multiple platforms to get
+                things done, do it all in one platform that has every feature
+                you need.
               </p>
               <div className="divide-y space-y-4 divide-gray-100 ">
                 <div className="mt-8 flex gap-4 md:items-center">
@@ -44,35 +46,11 @@ const WhatYouGet = () => {
                   </div>
                   <div className="w-5/6">
                     <h4 className="font-semibold text-lg text-gray-700 ">
-                      AI Chat 
+                      We Listen...
                     </h4>
                     <p className="text-gray-500 ">
-                      Students can chat with a fully trained AI that can help with anything.
-                    </p>
-                  </div>
-                </div>
-                <div className="pt-4 flex gap-4 md:items-center">
-                  <div className="w-12 h-12 flex gap-4 rounded-full bg-teal-100">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6 m-auto text-teal-600 "
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="w-5/6">
-                    <h4 className="font-semibold text-lg text-gray-700 ">
-                      Anywhere in the world.
-                    </h4>
-                    <p className="text-gray-500 ">
-                      Access Geleza and learn from anywhere
-                      around the world.
+                      No AI feature you are looking for? Tell us and we will
+                      make it available for you.
                     </p>
                   </div>
                 </div>
@@ -82,7 +60,7 @@ const WhatYouGet = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WhatYouGet
+export default WhatYouGet;

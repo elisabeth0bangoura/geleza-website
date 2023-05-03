@@ -15,69 +15,7 @@ import {
   IconBrandFacebook,
 } from "@tabler/icons-react";
 import Link, { LinkProps } from "next/link";
-
-const useStyles = createStyles((theme) => ({
-  inner: {
-    display: "flex",
-    justifyContent: "space-between",
-
-    [theme.fn.smallerThan("md")]: {
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
-
-  groups: {
-    display: "flex",
-    flexWrap: "wrap",
-
-    // [theme.fn.smallerThan('md')]: {
-    //   display: 'none',
-    // },
-  },
-
-  link: {
-    display: "block",
-    color: theme.colors.dark[1],
-    fontSize: theme.fontSizes.sm,
-    paddingTop: 3,
-    paddingBottom: 3,
-
-    "&:hover": {
-      textDecoration: "underline",
-    },
-  },
-
-  title: {
-    fontSize: theme.fontSizes.lg,
-    fontWeight: 700,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    marginBottom: `calc(${theme.spacing.xs} / 2)`,
-    color: theme.white,
-  },
-
-  afterFooter: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginTop: theme.spacing.xl,
-    paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xl,
-    borderTop: `1px solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[2]
-    }`,
-
-    [theme.fn.smallerThan("md")]: {
-      flexDirection: "column",
-    },
-  },
-
-  social: {
-    [theme.fn.smallerThan("md")]: {
-      marginTop: theme.spacing.xs,
-    },
-  },
-}));
+import footerStyles from "../../styles/footerStyles";
 
 interface FooterLinksProps {
   data: {
@@ -87,7 +25,7 @@ interface FooterLinksProps {
 }
 
 export default function Footer({ data }: FooterLinksProps) {
-  const { classes } = useStyles();
+  const { classes } = footerStyles();
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
@@ -116,9 +54,9 @@ export default function Footer({ data }: FooterLinksProps) {
           <div>
             <img src="/logo.png" className="h-10 mb-3" />
             <Text size="sm" color="dimmed">
-              Geleza is a college and high school learning platform that
-              simplifies the way students learn and prepare for their
-              examinations. <br /> <br /> Geleza is a product of Reavize
+              Geleza is an AI-powered platform that combines multiple tools to
+              help students, professionals, and businesses be more productive
+              and efficient. <br /> <br /> Geleza is a product of Reavize
               Enterprises.
             </Text>
           </div>

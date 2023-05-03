@@ -1,58 +1,54 @@
 const footerData = [
   {
-    title: 'Menu',
+    title: "Menu",
     links: [
       {
-        label: 'Home',
-        link: '/',
+        label: "Home",
+        link: "/",
       },
       {
-        label: 'Pricing',
-        link: '/pricing',
+        label: "Pricing",
+        link: "/pricing",
       },
       {
-        label: 'Help',
-        link: '/help',
+        label: "Help",
+        link: "/help",
       },
       // {
       //   label: 'Blog',
       //   link: '/blog',
       // },
       {
-        label: 'Terms & Conditions',
-        link: '/terms',
+        label: "Terms & Conditions",
+        link: "/terms",
       },
       {
-        label: 'Privacy Policy',
-        link: '/privacy',
+        label: "Privacy Policy",
+        link: "/privacy",
       },
     ],
   },
   {
-    title: 'Features',
+    title: "Solutions",
     links: [
       {
-        label: 'PrepPal - Exam Tools',
-        link: '/features/preppal',
+        label: "For Students",
+        link: "/solutions/students",
       },
       {
-        label: 'Zeda Writer',
-        link: '/features/zeda-writer',
+        label: "Professionals",
+        link: "/solutions/professionals",
       },
       {
-        label: 'Zeda Chat',
-        link: '/features/zeda-chat',
+        label: "Businesses",
+        link: "/solutions/businesses",
       },
       {
-        label: 'Smart Tools',
-        link: '/features/smart-tools',
-      },
-      {
-        label: 'Notes',
-        link: '/features/notes',
+        label: "Content Creators",
+        link: "/solutions/creators",
       },
     ],
   },
-]
+];
 
-export default footerData
+export default footerData;

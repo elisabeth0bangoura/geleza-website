@@ -7,3 +7,14 @@
     @apply px-12 py-4 bg-gray-700 text-white hover:scale-105 transition-all hover:translate-y-2 duration-700 font-bold;
   }
 }
+
+@supports (-webkit-text-stroke: 2px black) {
+  .stroke {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+  }
+}
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+}

@@ -1,12 +1,12 @@
-import React from 'react'
-import FreePlan from './FreePlan'
-import PaidPlan from './PaidPlan'
+import React from "react";
+import FreePlan from "./FreePlan";
+import PaidPlan from "./PaidPlan";
 
 export const metadata = {
-  title: 'Geleza - Pricing Plans',
+  title: "Geleza - Pricing Plans",
   description:
     "Affordable pricing to achieve academic success! Enroll now and discover why Geleza is the best investment you'll ever make in yourself.",
-}
+};
 
 const PricingPage = () => {
   return (
@@ -18,24 +18,24 @@ const PricingPage = () => {
           <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
         </div>
         <h1 className="text-3xl md:text-4xl text-white font-black text-center">
-          Get Started <br /> With {' '}
+          Get Started <br /> With{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600">
-            Geleza{' '}
+            Geleza{" "}
           </span>
           Today
-          <br />{' '}
+          <br />{" "}
         </h1>
         <h2 className="text-center text-lg text-white mt-3">
           Affordable Pricing to Achieve Academic Success!
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20">
-          <FreePlan/>
+          <FreePlan />
           <PaidPlan />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingPage
+export default PricingPage;

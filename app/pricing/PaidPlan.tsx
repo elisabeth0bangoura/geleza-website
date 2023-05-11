@@ -4,39 +4,61 @@ import React from "react";
 
 const PaidPlan = () => {
   return (
-    <Card className="bg-gray-800 py-5 px-10 text-white">
-      <div className="flex items-center gap-3">
-        <div>
-          <h6 className="font-bold text-2xl text-white">Special Offer</h6>
-          <p className="mt-1 font-light">🎉 Get 50% off! Until 15 May 🎉</p>
-        </div>
-      </div>
-
-      <div className="mb-8 mt-10 flex items-end gap-3 flex-wrap">
-        <h1 className="text-5xl font-black text-primary">
-          <span className="line-through text-red-500 text-3xl">$15</span> $7.50
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+      <Card withBorder className="">
+        <Card.Section className="bg-gradient-to-tr from-purple-400 to-blue-600 py-5">
+          <h6 className="text-center text-xl font-medium text-white">
+            STARTER PLAN
+          </h6>
+        </Card.Section>
+        <h1 className="text-center text-6xl font-bold text-primary mt-10">
+          $15
         </h1>
-        <p>/ Per Month</p>
-      </div>
+        <h6 className="text-center mt-3">Per Month</h6>
+        <div className="my-10 flex flex-col gap-2 text-sm">
+          <h6>✓ All Geleza features</h6>
+          <h6>✓ Unlimited usage</h6>
+          <h6>✓ Cancel anytime</h6>
+          <h6>✓ Premium support</h6>
+        </div>
+        <Button
+          component="a"
+          href="https://platform.geleza.app"
+          size="xl"
+          mb="xl"
+          className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
+        >
+          Start For Free
+        </Button>
+      </Card>
 
-      <div className="mb-5">
-        <h6 className="mb-5 text-white text-xl font-medium">
-          Full Access Plan
-        </h6>
-
-        <h1 className="mb-2 text-sm">🌟 Gain access to all AI tools</h1>
-        <h1 className="mb-2 text-sm">🌟 No monthly usage limits</h1>
-      </div>
-
-      <Button
-        component="a"
-        href="https://platform.geleza.app"
-        size="lg"
-        className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
-      >
-        Get Started
-      </Button>
-    </Card>
+      <Card withBorder className="">
+        <Card.Section className="bg-gradient-to-tr from-purple-400 to-blue-600 py-5">
+          <h6 className="text-center text-xl font-medium text-white">
+            SAVE $10
+          </h6>
+        </Card.Section>
+        <h1 className="text-center text-6xl font-bold text-primary mt-10">
+          $35
+        </h1>
+        <h6 className="text-center mt-3">Every 3 Months</h6>
+        <div className="my-10 flex flex-col gap-2 text-sm">
+          <h6>✓ All Geleza features</h6>
+          <h6>✓ Unlimited usage</h6>
+          <h6>✓ Cancel anytime</h6>
+          <h6>✓ Premium support</h6>
+        </div>
+        <Button
+          component="a"
+          href="https://platform.geleza.app"
+          size="xl"
+          mb="xl"
+          className="w-full bg-gradient-to-br from-primary via-blue-700 to-purple-700"
+        >
+          Start For Free
+        </Button>
+      </Card>
+    </div>
   );
 };
 

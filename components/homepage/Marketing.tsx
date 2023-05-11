@@ -31,7 +31,7 @@ const Marketing = () => {
           className="px-20 py-4 text-white bg-gradient-to-br from-blue-500 rounded-full via-blue-700 to-purple-700 font-normal mt-5 text-xl"
           href={"https://platform.geleza.app"}
         >
-          Explore Geleza Now
+          Explore Now
         </a>
       </div>
     </div>

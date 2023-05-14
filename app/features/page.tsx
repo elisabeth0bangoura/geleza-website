@@ -70,19 +70,16 @@ const FeaturesPage = () => {
           Start For Free
         </a>
       </div>
-
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 my-12">
-        {menu.map((item) => {
-          return (
-            <div className="border border-gray-300 p-5 rounded-2xl">
-              <h6 className="text-2xl">{item.icon}</h6>
-              <h2 className="my-2 text-2xl font-bold">{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
-          );
-        })}
-      </div> */}
-      <Menu items={groupedItems} />
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-7">
+        {menu.map((item) => (
+          <li className="border border-gray-300 p-5 rounded-2xl">
+            <h6 className="text-2xl">{item.icon}</h6>
+            <h2 className="my-2  text-xl font-medium">{item.title}</h2>
+            <p className="text-sm">{item.description}</p>
+          </li>
+        ))}
+      </ul>
+      {/* <Menu items={groupedItems} /> */}
     </div>
   );
 };

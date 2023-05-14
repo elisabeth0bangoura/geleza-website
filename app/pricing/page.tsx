@@ -1,6 +1,5 @@
 import React from "react";
 import FreePlan from "./FreePlan";
-import PaidPlan from "./PaidPlan";
 
 export const metadata = {
   title: "Geleza - Pricing Plans",
@@ -30,9 +29,6 @@ const PricingPage = () => {
         </h2>
 
         <FreePlan />
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20"> */}
-        <PaidPlan />
-        {/* </div> */}
       </div>
     </div>
   );

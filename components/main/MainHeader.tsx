@@ -114,8 +114,9 @@ export function MainHeader() {
           position="apart"
           sx={{ height: "100%" }}
         >
-          <Link href="/">
-            <img src="/icon-g.png" className="h-10" />
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/icon-g.png" className="h-8" />
+            <h6 className="font-black text-3xl text-gray-500">GELEZA</h6>
           </Link>
 
           <Group

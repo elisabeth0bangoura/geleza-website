@@ -13,24 +13,29 @@ const BlogPage = () => {
 
   //
   return (
-    <div className="py-20 w-full bg-gray-900">
-      <div className="w-full max-w-7xl px-5 mx-auto">
+    <div>
+      <div className="bg-gray-900 py-20 w-full">
         <div className="flex flex-col justify-center items-center max-w-4xl mx-auto w-full">
           <h1 className="text-4xl lg:text-6xl text-white font-black mb-3 text-center">
-            Geleza Blog.{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
-              Keeping You Updated
-            </span>
-            , Always
+            Geleza Blog. <br />
+            <h1 className="text-4xl mt-2">
+              Keeping{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
+                You Updated
+              </span>
+              , Always
+            </h1>
           </h1>
         </div>
-        <div className="mb-8 mt-5 flex items-center justify-center">
+        <div className="my-5 flex items-center justify-center">
           <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
           <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
           <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
         </div>
+      </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="w-full max-w-7xl px-5 mx-auto">
+        <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {posts?.map((post: any, index: number) => {
             return (
               <PostItem

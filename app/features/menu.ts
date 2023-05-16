@@ -153,6 +153,15 @@ const menu: MenuItem[] = [
     keywords: "cv, interview, cover letter, job, application, work, career",
     group: "Career Tools",
   },
+  {
+    title: "CV Revamp",
+    description:
+      "Use AI to analyze your CV for potential improvements and improve your chances of getting hired.",
+    icon: "💪🏾",
+    link: "/cv-revamp",
+    keywords: "cv, interview, cover letter, job, application, work, career",
+    group: "Career Tools",
+  },
 
   // PERSONAL TOOLS
   {

@@ -51,7 +51,7 @@ const FeaturesPage = () => {
         <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
         <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
       </div>
-      <div className="flex flex-col justify-center items-center w-full mx-auto max-w-4xl mb-10">
+      <div className="flex flex-col justify-center items-center w-full mx-auto max-w-4xl mb-16">
         <h1 className="text-center text-gray-700 md:text-5xl  text-3xl font-black">
           Meet the{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
@@ -70,11 +70,11 @@ const FeaturesPage = () => {
           Start For Free
         </a>
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-7">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-7">
         {menu.map((item) => (
-          <li className="border border-gray-300 p-5 rounded-2xl">
-            <h6 className="text-2xl">{item.icon}</h6>
-            <h2 className="my-2  text-xl font-medium">{item.title}</h2>
+          <li className="border border-gray-300 px-5 py-8 rounded-none">
+            <h6 className="text-xl">{item.icon}</h6>
+            <h2 className="my-3  text-lg font-bold">{item.title}</h2>
             <p className="text-sm">{item.description}</p>
           </li>
         ))}

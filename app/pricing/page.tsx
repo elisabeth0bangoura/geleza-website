@@ -1,5 +1,5 @@
 import React from "react";
-import FreePlan from "./FreePlan";
+import Subscribe from "./Subscribe";
 
 export const metadata = {
   title: "Geleza - Pricing Plans",
@@ -10,7 +10,7 @@ export const metadata = {
 const PricingPage = () => {
   return (
     <div className="bg-gray-900">
-      <div className="mx-auto py-20 max-w-3xl px-5 w-full">
+      <div className="mx-auto py-20 max-w-4xl px-5 w-full">
         <div className="mb-8 flex items-center justify-center">
           <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
           <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
@@ -21,14 +21,15 @@ const PricingPage = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600">
             Geleza{" "}
           </span>
-          Today
+          For Free
           <br />{" "}
         </h1>
-        <h2 className="text-center text-lg text-white mt-3">
-          Affordable Pricing For Your Success!
+        <h2 className="text-center text-white mt-4">
+          Affordable Pricing For Your Success! <br /> Get 1 Day Free With
+          Student Plan.
         </h2>
 
-        <FreePlan />
+        <Subscribe />
       </div>
     </div>
   );

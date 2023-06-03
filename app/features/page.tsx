@@ -1,5 +1,4 @@
 import React from "react";
-import menu, { MenuItem } from "./menu";
 
 export const metadata = {
   title: "Geleza - Features",
@@ -7,39 +6,11 @@ export const metadata = {
     "Explore the rich features of Geleza and find out how our AI-powered platform can streamline your workflow, boost productivity, and help you achieve your goals.",
 };
 
-const FeaturesPage = () => {
-  const groupedItems = menu.reduce((acc, item) => {
-    if (!acc[item.group]) {
-      acc[item.group] = [];
-    }
-    acc[item.group].push(item);
-    return acc;
-  }, {} as Record<string, MenuItem[]>);
+export const revalidate = 10000;
 
-  type MenuProps = {
-    items: Record<string, MenuItem[]>;
-  };
-
-  const Menu: React.FC<MenuProps> = ({ items }) => {
-    return (
-      <div className="my-5">
-        {Object.entries(items).map(([groupName, groupItems]) => (
-          <div key={groupName} className="mb-6">
-            <h2 className="text-xl font-bold mb-3">☑️ {groupName}</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-7">
-              {groupItems.map((item) => (
-                <li className="border border-gray-300 p-5 rounded-2xl">
-                  <h6 className="text-2xl">{item.icon}</h6>
-                  <h2 className="my-2  text-xl font-medium">{item.title}</h2>
-                  <p className="text-sm">{item.description}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    );
-  };
+const FeaturesPage = async () => {
+  const response = await fetch("https://platform.geleza.app/api/menu");
+  const menuItems = await response.json();
 
   return (
     <div className="w-full mx-auto max-w-7xl py-10 px-5">
@@ -57,7 +28,7 @@ const FeaturesPage = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
             Best AI Platform
           </span>{" "}
-          Supercharged With +{menu.length} Features.
+          Supercharged With +{menuItems.length} Features.
         </h1>
         <p className="text-center text-gray-900 mt-5 text-xl">
           Geleza has everything you need to take your business, studies, or
@@ -71,9 +42,9 @@ const FeaturesPage = () => {
         </a>
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-7">
-        {menu.map((item) => (
+        {menuItems.map((item: any) => (
           <li className="border border-gray-300 px-5 py-8 rounded-none">
-            <h6 className="text-xl">{item.icon}</h6>
+            <h6 className="text-xl">{item.emoji}</h6>
             <h2 className="my-3  text-lg font-bold">{item.title}</h2>
             <p className="text-sm">{item.description}</p>
           </li>

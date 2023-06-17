@@ -25,9 +25,9 @@ const PricingPage = () => {
           <br />{" "}
         </h1>
 
-        <h2 className="text-center text-white mt-4">
-          Affordable Pricing For Your Success! <br /> Get 1 Day Free With
-          Student Plan.
+        <h2 className="text-center text-white mt-4 capitalize">
+          Affordable Pricing For Your Success! <br /> Get started today, cancel
+          anytime.
         </h2>
 
         <FreePlan />

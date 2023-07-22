@@ -21,7 +21,7 @@ const PricingPage = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-600">
             Geleza{" "}
           </span>
-          For Free
+          For Only $15
           <br />{" "}
         </h1>
 

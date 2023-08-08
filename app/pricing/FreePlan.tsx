@@ -7,14 +7,14 @@ const FreePlan = () => {
     <Card className="bg-gray-800 py-5 px-10 text-white mt-10">
       <div className="flex items-center flex-wrap gap-3 justify-between">
         <div>
-          <h6 className="font-bold text-2xl text-white">Pro Plan ⚡</h6>
-          <p className="mt-1 font-light text-white">Perfect to get started.</p>
+          <h6 className="font-bold text-4xl text-white">Free Trial ⚡</h6>
+          <p className="mt-1 font-light text-white">Get a 3 days free trial</p>
         </div>
         <div className="flex flex-col justify-end">
-          <h1 className="text-5xl font-black text-primary flex items-center">
-            $15
+          <h1 className="text-4xl font-black text-primary flex items-center">
+            $19
           </h1>
-          <p className="text-end">Monthly</p>
+          <p className="text-end">After Trial</p>
         </div>
       </div>
 
